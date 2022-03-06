@@ -148,7 +148,7 @@ img {
 }
 
 a {
-  border: calc(var(--w)/300) solid hsl(250, 100%, 50%);
+  border: calc(var(--w)/300) solid hsl(250, 100%, 30%);
   width: 30%;
   height: 5%;
   left: 35%;
@@ -157,15 +157,24 @@ a {
   justify-content: center;
   align-items: center;
   color: hsl(250, 100%, 60%);
-  font-size: calc(var(--w)/13);
+  font-size: calc(var(--w)/15);
   font-family: "Hubballi", sans-serif;
 }
 
 /* CONTENT: LANDSCAPE //////////////////////////////// */
 @media only screen and (orientation: landscape) {
   img {
-    top: 10%;
+    top: 8%;
     left: 30%;
     width: 40%;
+  }
+
+  a {
+    font-size: calc(var(--w)/30);
+    width: 12%;
+    height: 8%;
+    border-width: calc(var(--w)/1000);
+    left: 44%;
+    top: 83%;
   }
 }
