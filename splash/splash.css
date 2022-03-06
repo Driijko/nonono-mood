@@ -141,6 +141,10 @@ i {
   background-color: hsl(250, 100%, 5%);
 }
 
+.ur {
+  border: calc(var(--w)/500) solid hsl(250, 100%, 20%);
+}
+
 img {
   left: 5%;
   width: 90%;
@@ -148,7 +152,7 @@ img {
 }
 
 a {
-  border: calc(var(--w)/300) solid hsl(250, 100%, 30%);
+  border: calc(var(--w)/300) solid hsl(250, 100%, 20%);
   width: 30%;
   height: 5%;
   left: 35%;
