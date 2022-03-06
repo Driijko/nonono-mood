@@ -1,5 +1,5 @@
 gsap.set("#album-cover", {
-  opacity: 1,
+  opacity: 0,
 })
 
 gsap.to("#album-cover", {
