@@ -137,14 +137,24 @@ i {
 }
 
 /* CONTENT: PORTRAIT ////////////////////////////////////////////////////// */
+svg {
+  display: none;
+}
+
 .vp {
   background-color: hsl(250, 100%, 5%);
 }
 
 img {
-  left: 5%;
   width: 90%;
+  left: 5%;
   top: 15%;
+  filter: url(#filter1);
+}
+
+@keyframes blur-in {
+  from {filter: blur(calc(var(--w)/50));}
+  to {filter: blur(0);}
 }
 
 a {
@@ -159,14 +169,25 @@ a {
   color: hsl(250, 100%, 60%);
   font-size: calc(var(--w)/15);
   font-family: "Hubballi", sans-serif;
+  /* animation: blur-in 17s ease-out; */
+  transition-property: color, box-shadow, border-color;
+  transition-duration: 2s;
+}
+
+a:hover, a:focus {
+  color: hsl(250, 100%, 50%);
+  border-color: hsl(250, 100%, 50%);
+  box-shadow:hsl(250, 100%, 30%) 0px 0px calc(var(--w)/10);
 }
 
 /* CONTENT: LANDSCAPE //////////////////////////////// */
 @media only screen and (orientation: landscape) {
   img {
+    /* border: 4px solid red; */
     top: 8%;
     left: 30%;
     width: 40%;
+    /* height: 64%; */
   }
 
   a {
