@@ -95,21 +95,20 @@ gsap.to(".paths1", {
 });
 
 // REDIRECTS ////////////////////////////////
-// document.getElementsByClassName("links").forEach(link => {
-//   console.log(link);
-// });
 function animatedExit() {
   gsap.to("#foreground", {
     duration: 5,
-    "background-color": "hsla(250, 100%, 10%, 1)",
+    "background-color": "hsla(250, 100%, 5%, 1)",
   });
-}
+};
+
 function redirect(address) {
   animatedExit();
   setTimeout(()=> {
     window.location.href = address;
   }, 6000);
-}
+};
+
 for (let link of document.getElementsByClassName("links")) {
   link.addEventListener("click", e=> {
     e.preventDefault();
