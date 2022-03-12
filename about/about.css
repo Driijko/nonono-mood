@@ -150,7 +150,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 50% 30%;
-  /* animation: background-scale1 18s linear, blur1 18s linear; */
+  animation: background-scale1 18s ease-out, blur1 18s linear;
 }
 @media only screen and (min-width: 601px) {
   #background1 {
@@ -189,20 +189,32 @@ header nav ul li a {
   align-items: center;
   font-size: calc(var(--w)/12);
   text-align: center;
+  transition-property: transform, background-color;
+  transition-duration: 2s;
 }
 
 header nav ul li a:hover, header nav ul li a:focus {
   background-color: hsla(0, 0%, 0%, 0.8);
+  transform: scale(110%);
 }
 
 #tracks-link {
   font-family: "Ubuntu", sans-serif;
   bottom: 10%;
-  width: 100%;
+  width: 40%;
+  left: 30%;
   text-align: center;
   font-size: calc(var(--w)/12);
-  background-color: hsl(0, 0%, 50%);
+  border: calc(var(--w)/100) solid white;
   animation: fade-in 5s linear forwards;
+  transition-property: background-color, color, transform;
+  transition-duration: 2s;
+}
+
+#tracks-link:hover, #tracks-link:focus {
+  background-color: white;
+  color: black;
+  transform: scale(120%);
 }
 
 @media only screen and (orientation: landscape) {
@@ -217,8 +229,8 @@ header nav ul li a:hover, header nav ul li a:focus {
   #background1 {
     background-size: 50%;
     background-position: 30% 50%;
-    /* animation: background-scale2 18s linear forwards, 
-      blur1 18s linear forwards; */
+    animation: background-scale2 18s linear forwards, 
+      blur1 18s linear forwards;
   }
 
   header nav ul {
@@ -234,30 +246,16 @@ header nav ul li a:hover, header nav ul li a:focus {
   header nav ul li a {
     font-size: calc(var(--w)/30);
     width: 65%;
-    transition-property: transform, background-color;
-    transition-duration: 2s;
-  }
-
-  header nav ul li a:hover, header nav ul li a:focus {
-    transform: scale(110%);
   }
 
   #tracks-link {
     font-size: calc(var(--w)/30);
-    background-color: transparent;
-    color: white;
     top: 48%;
     right: 7%;
     width: 20%;
-    border: calc(var(--w)/200) solid white;
+    border-width: calc(var(--w)/200);
     height: 7%;
-    transition-property: background-color, color, transform;
-    transition-duration: 2s;
   }
 
-  #tracks-link:hover, #tracks-link:focus {
-    background-color: white;
-    color: black;
-    transform: scale(120%);
-  }
+
 }
