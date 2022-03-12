@@ -57,40 +57,40 @@ window.addEventListener("resize", ()=> {
   }
 });
 
-
-gsap.set("#album-cover", {
-  opacity: 0,
-})
-
-gsap.to("#album-cover", {
-  duration:10,
-  opacity: 1,
-});
-gsap.to("#filter-effect1", {
-  duration: 10,
+// ANIMATION ////////////////////////////////////////////
+gsap.to("#offset1", {
+  duration: 6,
+  delay: 2,
   attr: {
-    stdDeviation: 0,
+    offset: "5%",
   },
-  ease: "ease-in",
+  ease: Power1.easein,
 });
 
-document.getElementById("enter-link").addEventListener("click", e => {
-  e.preventDefault();
-  gsap.to("#album-cover", {
-    duration: 5,
-    opacity: 0,
-  });
-  gsap.to("#filter-effect1", {
-    duration: 5,
-    attr: {
-      stdDeviation: 50,
-    },
-  });
-  gsap.to(e.target, {
-    duration: 5,
-    opacity: 0,
-  });
-  setTimeout(()=> {
-    window.location.href = "./menu.html";
-  }, 6000)
-})
+gsap.to("#offset2", {
+  duration: 6,
+  delay: 2,
+  attr: {
+    offset: "95%",
+  },
+  ease: Power1.easein,
+});
+
+gsap.to("#offset3", {
+  duration: 6,
+  delay: 2,
+  attr: {
+    offset: "10%",
+  },
+  ease: Power1.easein,
+});
+
+gsap.to(".paths1", {
+  duration: 10,
+  delay: 6,
+  opacity: 1,
+  attr: {
+    "stroke-width": 200,
+  }
+});
+

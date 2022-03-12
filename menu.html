@@ -30,16 +30,156 @@
   <meta property="og:url" content="" />         
 
   <!-- CSS //////////////////////////////////////////// -->
-  <link rel="stylesheet" type="text/css" href="./reset.css" />
-  <link rel="stylesheet" type="text/css" href="./style.css" />
-  <link rel="stylesheet" type="text/css" href="./splash/splash.css" />
+  <link rel="stylesheet" type="text/css" href="./menu/menu.css" />
 
   <!-- GOOGLE FONTS ///////////////// -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">  
 </head>
 <body>
-
+  <div class="vp">
+    <div class="ur">
+      <svg viewbox="0 0 1000 1777">
+        <defs>
+          <linearGradient id="gradient1" gradientTransform="rotate(90)">
+            <stop id="offset1" offset="100%"  stop-color="transparent" />
+            <stop offset="95%" stop-color="hsla(250, 100%, 40%, 0.8)" />
+          </linearGradient>
+          <linearGradient id="gradient2" gradientTransform="rotate(90)">
+            <stop offset="5%"  stop-color="hsla(250, 100%, 40%, 0.8)" />
+            <stop id="offset2" offset="0%" stop-color="transparent" />
+          </linearGradient>
+          <radialGradient id="gradient3">
+            <stop id="offset3" offset="100%" stop-color="transparent" />
+            <stop offset="95%" stop-color="hsla(250, 100%, 40%, 0.8)" />
+          </radialGradient>
+        </defs>
+        <path fill="url(#gradient1)"
+          d="M0, 0
+            Q 0 355 250 533
+            V 355
+            H 750
+            Q 0 355 0 0
+            Z
+        "/>
+        <path fill="url(#gradient1)"
+          d="M 0, 0
+            Q 0 355 250 533
+            V 355
+            H 750
+            Q 0 355 500 0
+            Z
+        "/>
+        <path fill="url(#gradient1)"
+          d="M 1000, 0
+            Q 1000,355 250 355
+            H 750
+            V 533
+            Q 1000,355 1000,0
+            Z
+        "/>
+        <path fill="url(#gradient1)"
+          d="M 500, 0
+            Q 1000,355 250 355
+            H 750
+            V 533
+            Q 1000,355 1000,0
+            Z
+        "/>
+        <path fill="url(#gradient1)"
+          d="M 500, 0
+            Q 0,0 500,355
+            Q 1000,0 500,0
+            Z
+        "/>
+        <path fill="url(#gradient2)"
+          d="M 0,1777
+            Q 0,1422 250,1245
+            V 1422
+            H 750
+            Q 0,1422 0,1777
+            Z
+        "/>
+        <path fill="url(#gradient2)"
+          d="M 0,1777
+            Q 0,1422 250,1245
+            V 1422
+            H 750
+            Q 0,1422 500,1777
+            Z
+        "/>
+        <path fill="url(#gradient2)"
+          d="M 1000,1777
+            Q 1000,1422 750,1245
+            V 1422
+            H 250
+            Q 1000,1422 1000,1777
+            Z
+        "/>
+        <path fill="url(#gradient2)"
+          d="M 1000,1777
+            Q 1000,1422 750,1245
+            V 1422
+            H 250
+            Q 1000,1422 500,1777
+            Z
+        "/>
+        <path fill="url(#gradient2)"
+          d="M 500, 1777
+            Q 0,1777 500,1422
+            Q 1000,1777 500,1777
+            Z
+        "/>
+        <path fill="url(#gradient3)"
+          d="M 250,533
+            Q 1000,800 750,1245
+            H 250
+            Q 0,800 750,533
+            H 250
+        "/>
+        <path fill="url(#gradient3)"
+          d="M 250,533
+            Q 1000,800 250,1245
+            H 750
+            Q 0,800 750,533
+            H 250
+        "/>
+        <!--stroke-dasharray="100"  -->
+        <g class="desktop">
+          <path class="paths1" stroke="hsla(250, 100%, 50%, 0.1)"
+          stroke-width="10" 
+            fill="url(#gradient3)"
+            d="M -500,592
+            Q -400,640 -500,710
+            Q -400,900 -500,1065
+            Q -400,1105 -500,1185
+            Q -600,1105 -500,1065
+            Q -600,900 -500,710
+            Q -600,640 -500,592
+            Z
+          "/>
+          <path class="paths1" stroke="hsla(250, 100%, 50%, 0.1)"
+          stroke-width="10" 
+            fill="url(#gradient3)"
+            d="M 1500,592
+            Q 1400,640 1500,710
+            Q 1400,900 1500,1065
+            Q 1400,1105 1500,1185
+            Q 1600,1105 1500,1065
+            Q 1600,900 1500,710
+            Q 1600,640 1500,592
+            Z
+          "/>
+        </g>
+      </svg>
+      <menu>
+        <a href="">tracks</a>
+        <a href="">about</a>
+      </menu>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="./menu/menu.js"></script>
 </body>
 </html>
