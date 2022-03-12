@@ -135,6 +135,10 @@ body {
   0% {background-size: 300%;}
   100% {background-size: 100%;}
 }
+@keyframes background-scale2 {
+  0% {background-size: 150%;}
+  100% {background-size: 50%;}
+}
 #background1 {
   position: absolute;
   top: 0;
@@ -145,21 +149,21 @@ body {
   background-image: url("../assets/visual/mood-album-cover-medium.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: 50% 50%;
-  animation: background-scale1 18s linear, blur1 18s linear;
+  background-position: 50% 30%;
+  /* animation: background-scale1 18s linear, blur1 18s linear; */
 }
 @media only screen and (min-width: 601px) {
   #background1 {
-    background-image: url("../assets/visual/mood-album-cover-medium.jpg");
+    background-image: url("../assets/visual/mood-album-cover-large.jpg");
   }
 }
 /* CONTENT ////////////////////////////// */
 header {
-  font-family: "Plaster", sans-serif;
+  color: white;
 }
-
 header nav {
   height: 100%;
+  font-family: "Plaster", sans-serif;
 }
 
 header nav ul {
@@ -167,13 +171,12 @@ header nav ul {
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  padding-bottom: 10%;
-  color: white;
+  padding-bottom: 40%;
   animation: fade-in 5s forwards;
 }
 
 header nav ul li {
-  height: 20%;
+  height: 25%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -192,6 +195,16 @@ header nav ul li a:hover, header nav ul li a:focus {
   background-color: hsla(0, 0%, 0%, 0.8);
 }
 
+#tracks-link {
+  font-family: "Ubuntu", sans-serif;
+  bottom: 10%;
+  width: 100%;
+  text-align: center;
+  font-size: calc(var(--w)/12);
+  background-color: hsl(0, 0%, 50%);
+  animation: fade-in 5s linear forwards;
+}
+
 @media only screen and (orientation: landscape) {
   .desktop {
     display: initial;
@@ -201,15 +214,50 @@ header nav ul li a:hover, header nav ul li a:focus {
     display: none;
   }
 
+  #background1 {
+    background-size: 50%;
+    background-position: 30% 50%;
+    /* animation: background-scale2 18s linear forwards, 
+      blur1 18s linear forwards; */
+  }
+
   header nav ul {
     padding-bottom: 0%;
+    padding-top: 12%;
+    padding-left: 8%;
   }
 
   header nav ul li {
-    height: 30%;
+    height: 23%;
   }
 
   header nav ul li a {
-    font-size: calc(var(--w)/20);
+    font-size: calc(var(--w)/30);
+    width: 65%;
+    transition-property: transform, background-color;
+    transition-duration: 2s;
+  }
+
+  header nav ul li a:hover, header nav ul li a:focus {
+    transform: scale(110%);
+  }
+
+  #tracks-link {
+    font-size: calc(var(--w)/30);
+    background-color: transparent;
+    color: white;
+    top: 48%;
+    right: 7%;
+    width: 20%;
+    border: calc(var(--w)/200) solid white;
+    height: 7%;
+    transition-property: background-color, color, transform;
+    transition-duration: 2s;
+  }
+
+  #tracks-link:hover, #tracks-link:focus {
+    background-color: white;
+    color: black;
+    transform: scale(120%);
   }
 }
