@@ -11,8 +11,27 @@
   width: 10%;
 }
 
+.page-link path {
+  transition-property: stroke;
+  transition-duration: 1s;
+  transition-timing-function: ease-out; 
+}
 .page-link:hover path, .page-link:focus path {
-  stroke: red;
+  stroke: magenta;
+}
+
+.header-row-link-container path, .header-row-link-container rect {
+  transition-property: fill;
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
+}
+
+.header-row-link-container a:hover path, .header-row-link-container a:focus path {
+  fill: magenta;
+}
+
+.header-row-link-container a:focus rect, .header-row-link-container a:hover rect {
+  fill: black;
 }
 
 #about-album1 .header-row-link-container {
@@ -41,4 +60,25 @@ h2 {
 /* BACKGROUNDS /////////////////////////////////////// */
 #background2 {
   background-color: black;
+}
+
+@media only screen and (orientation: landscape) {
+  #background2 path {
+    transform: scale(40%) translate(-10%, -1%);
+  }
+
+  h2 {
+    font-size: calc(var(--w)/20);
+  }
+
+  #about-album1 h2 {
+    left: 40%;
+    word-spacing: calc(var(--w)/100);
+    letter-spacing: calc(var(--w)/200);
+  }
+
+  #about-album1 .header-row-link-container {
+    width: 7%;
+    left: 60%;
+  }
 }
