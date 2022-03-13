@@ -58,3 +58,13 @@ window.addEventListener("resize", ()=> {
 });
 
 // ANIMATIONS /////////////////////////////////
+document.getElementById("tracks-link").addEventListener("click", e => {
+  e.preventDefault();
+  gsap.to("header", {
+    duration: 5,
+    filter: "blur(50px)",
+  });
+  setTimeout(()=> {
+    window.location.href = "./tracks.html";
+  }, 5000); 
+});

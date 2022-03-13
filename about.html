@@ -29,24 +29,28 @@
   <meta property="og:description" content="Music for a world on fire." />
   <meta property="og:url" content="" />         
 
+  <!-- PRELOADS //////////////////////////////////////// -->
+
   <!-- CSS //////////////////////////////////////////// -->
   <link rel="stylesheet" type="text/css" href="./about/about.css" />
+  <link rel="stylesheet" type="text/css" href="./about/about2.css" />
 
   <!-- GOOGLE FONTS ///////////////// -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plaster&family=Ubuntu&display=swap" rel="stylesheet"> 
-  
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Plaster&family=Ubuntu&display=swap" rel="stylesheet">   
+
 </head>
 <body>
   <div id="msc">
-    <header class="vp">
+
+    <!-- <header id="header" class="vp">
       <div id="background1"></div>
       <div class="ur">
         <nav>
           <ul>
             <li>
-              <a href="#about-album" >about the album</a>
+              <a href="#about-album1" >about the album</a>
             </li>
             <li>
               <a href="#band-members" >band<br/>members</a>
@@ -56,9 +60,75 @@
             </li>
           </ul>
         </nav>
-        <a id="tracks-link" class="abs" href="">tracks</a>
+        <a id="tracks-link" class="abs" href="./tracks.html">tracks</a>
       </div>
-    </header>
+    </header> -->
+
+    <div id="about-album1" class="vp">
+      <div class="ur">
+        <svg id="background2" class="abs" viewbox="0 0 1000 1777">
+          <path stroke-width="0" 
+            fill="white"
+            stroke-linejoin="round"
+            d="M 500,100
+            Q 100,200 500,300
+            Q 1000,500 500,1200
+            Q 100,1395 500,1495
+            Q 900,1395 500,1200
+            Q 0,500 500,300
+            Q 900,200 500,100
+            Q 0,1000 500,1200
+            Q 1000,1000 500,100
+          "/>
+        </svg>
+        <h2>about<br/>the<br/>album</h2>
+        <svg class="header-row-link-container" viewbox="0 0 100 100">
+          <a href="#about-album2">
+            <rect x="5" y="5" width="90" height="90" fill="white"/>
+            <path stroke="black" stroke-width="5" stroke-linecap="round"
+              stroke-linejoin="round" fill="black"
+              d="M 30,20
+              L 80,50
+              L 30,80
+              Z
+            "/>
+          </a>
+        </svg>
+        <svg class="page-links" viewbox="0 0 1000 100">
+          <a class="page-link" href="#header">
+            <rect x="-230" y="0" width="240" height="100" fill="transparent"/>
+            <path stroke="white" stroke-width="20" fill="transparent"
+              stroke-linecap="round" stroke-linejoin="round"
+              d="M -10,90
+              L -110,15
+              L -210,90
+            "/>
+          </a>
+          <a class="page-link" href="#header">
+            <rect x="380" y="0" width="240" height="100" fill="transparent"/>
+            <path stroke="white" stroke-width="20" fill="transparent"
+              stroke-linecap="round"
+              d="M 400,10
+              H 600
+              M 400,50
+              H 600
+              M 400,90
+              H 600
+            "/>
+          </a>
+          <a class="page-link" href="#about-album2">
+            <rect x="970" y="0" width="240" height="100" fill="transparent"/>
+            <path stroke="white" stroke-width="20" fill="transparent"
+              stroke-linecap="round" stroke-linejoin="round"
+              d="M 1190,10
+              L 1090,85
+              L 990,10
+            "/>
+          </a>
+        </svg>
+      </div>
+    </div>
+
   </div>  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="./about/about.js"></script>

@@ -1,0 +1,44 @@
+/* PAGE-LINKS ////////////////////////////////////// */
+.page-links {
+  position: absolute;
+  bottom: 2%;
+  width: 90%;
+  left: 5%;
+  height: 3%;
+}
+
+.page-link {
+  width: 10%;
+}
+
+.page-link:hover path, .page-link:focus path {
+  stroke: red;
+}
+
+#about-album1 .header-row-link-container {
+  position: absolute;
+  left: 42%;
+  top: 44%;
+  width: 17%;
+  border: 4px solid white;
+}
+
+/* HEADERS ////////////////////////////////////////// */
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: calc(var(--w)/11);
+  text-align: center;
+  position: absolute;
+  color: white;
+}
+
+#about-album1 h2 {
+  left: 35%;
+  top: 25%;
+}
+
+/* BACKGROUNDS /////////////////////////////////////// */
+#background2 {
+  background-color: black;
+}
