@@ -35,6 +35,12 @@
   stroke: magenta;
 }
 
+.header-row-link-container {
+  position: absolute;
+  width: 13%;
+  border: calc(var(--w)/100) solid hsl(250, 100%, 60%);
+}
+
 .header-row-link-container path, .header-row-link-container rect {
   transition-property: fill;
   transition-duration: 2s;
@@ -50,11 +56,8 @@
 }
 
 #about-album1 .header-row-link-container {
-  position: absolute;
   left: 43.5%;
   top: 45%;
-  width: 13%;
-  border: calc(var(--w)/100) solid hsl(250, 100%, 60%);
 }
 
 /* HEADERS ////////////////////////////////////////// */
@@ -95,7 +98,7 @@ p {
 
 .album-name {
   font-family: "Ubuntu";
-  color: hsl(240, 100%, 60%);
+  color: hsl(240, 100%, 50%);
   font-weight: bold;
   font-style: italic;
   font-size: calc(var(--w)/10);
@@ -107,6 +110,10 @@ p {
   text-decoration: underline;
   color: hsl(250, 100%, 70%);
   font-weight: bold;
+}
+
+#bandcamp-link:hover, #bandcamp-link:focus {
+  color: magenta;
 }
 
 @media only screen and (orientation: landscape) {
@@ -127,10 +134,13 @@ p {
   }
 
   /* PAGE-LINKS ----------------------------------------------- */
-  #about-album1 .header-row-link-container {
+  .header-row-link-container {
     width: 7%;
+    border: hsl(250, 100%, 30%) solid calc(var(--w)/200);
+  }
+
+  #about-album1 .header-row-link-container {
     left: 60%;
-    border-color: hsl(250, 100%, 30%);
   }
 
   /* PARAGRAPHS -------------------------------------------- */

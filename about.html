@@ -34,11 +34,12 @@
   <!-- CSS //////////////////////////////////////////// -->
   <link rel="stylesheet" type="text/css" href="./about/about.css" />
   <link rel="stylesheet" type="text/css" href="./about/about2.css" />
+  <link rel="stylesheet" type="text/css" href="./about/about3.css" />
 
   <!-- GOOGLE FONTS ///////////////// -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Plaster&family=Ubuntu&display=swap" rel="stylesheet">   
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Montserrat:ital,wght@0,300;1,300&family=Plaster&family=Ubuntu&display=swap" rel="stylesheet">    
 
 </head>
 <body>
@@ -64,7 +65,7 @@
       </div>
     </header>
 
-    <div class="row">
+    <section id="row1" class="row">
 
       <!-- ABOUT ALBUM 1 /////////////////////////////////////////// -->
       <div id="about-album1" class="vp">
@@ -245,7 +246,7 @@
             </p>
             <p class="album-name">mood</p>
             <p>
-              To contribute to the project,<br class="mobile"/> or download the album,<br/> you can check out the band's<a id="bandcamp-link" href="https://nononoband.bandcamp.com/releases"> bandcamp profile</a>, where all proceeds are currently going to assist Ukrainians during the<br/> Russian invasion.
+              To contribute to the project,<br class="mobile"/> or download the album,<br/> you can check out the band's<a id="bandcamp-link" href="https://nononoband.bandcamp.com/releases" target="_blank" referrer="no-referrer"> bandcamp profile</a>, where all proceeds are currently going to assist Ukrainians during the<br/> Russian invasion.
             </p>
           </div>
           <svg class="page-links-horizontal" viewbox="0 0 1000 100">
@@ -274,8 +275,210 @@
         </div>
       </div>
       
-    </div>
+    </section>
     
+    <section id="row2" class="row">
+
+      <div id="band-members1" class="vp">
+        <div class="ur">
+          <svg id="background3" class="abs" viewbox="0 0 1000 1778">
+            <defs>
+              <radialGradient id="gradient2">
+                <stop offset="10%" stop-color="hsla(250, 100%, 50%, 0.5)" />
+                <stop offset="95%" stop-color="hsla(250, 100%, 10% , 0.5)" />
+              </radialGradient>
+            </defs>
+            <path stroke-width="5"
+              stroke="hsl(250, 100%, 15%)" 
+              fill="url(#gradient2)"
+              stroke-linejoin="round"
+              d="M 900,100
+              Q 1000,1600 100, 1600
+              Q 0,1000 600,1600
+              Q 1000,1200 800,200
+              Z
+            "/>
+            <path stroke-width="5"
+              stroke="hsl(250, 100%, 15%)" 
+              fill="url(#gradient2)"
+              stroke-linejoin="round"
+              d="M 500,100
+              Q 1000,1300 100,1600
+              Q 500,1000 800,1600
+              Q 1000,1200 800,200
+              Z
+            "/>            
+          </svg>
+          <h2>band <br class="mobile"/>members</h2>
+          <svg class="header-row-link-container" viewbox="0 0 100 100">
+            <a href="#band-members2">
+              <rect x="5" y="5" width="90" height="90" fill="hsl(250, 100%, 90%)"/>
+              <path stroke="black" stroke-width="5" stroke-linecap="round"
+                stroke-linejoin="round" fill="black"
+                d="M 30,20
+                L 80,50
+                L 30,80
+                Z
+              "/>
+            </a>
+          </svg>
+          <svg class="page-links-vertical" viewbox="0 0 1000 100">
+            <a class="page-link" href="#header">
+              <rect x="-230" y="0" width="240" height="100" fill="transparent"/>
+              <path stroke="hsl(250, 100%, 60%)" stroke-width="20" fill="transparent"
+                stroke-linecap="round" stroke-linejoin="round"
+                d="M -10,90
+                L -110,15
+                L -210,90
+              "/>
+            </a>
+            <a class="page-link" href="#header">
+              <rect x="380" y="0" width="240" height="100" fill="transparent"/>
+              <path stroke="hsl(250, 100%, 60%)" stroke-width="20" fill="transparent"
+                stroke-linecap="round"
+                d="M 400,10
+                H 600
+                M 400,50
+                H 600
+                M 400,90
+                H 600
+              "/>
+            </a>
+            <a class="page-link" href="#band-members1">
+              <rect x="970" y="0" width="240" height="100" fill="transparent"/>
+              <path stroke="hsl(250, 100%, 60%)" stroke-width="20" fill="transparent"
+                stroke-linecap="round" stroke-linejoin="round"
+                d="M 1190,10
+                L 1090,85
+                L 990,10
+              "/>
+            </a>
+          </svg>
+        </div>
+      </div>
+
+      <div id="band-members2" class="vp">
+        <div class="ur">
+          <img class="band-member-pic" src="./assets/visual/krystal-small.jpg" alt="Picture of no no no band member Krystal Selbee." />
+          <h3 class="band-member-name">Krystal Selbee</h3>
+          <h4 class="band-member-role">vocals / rhetoric</h4>
+          <p class="band-member-write-up">
+            Krystal is an educator and ceramicist living in Montreal. She likes jerk chicken, wall-ball, and non-hierarchical social strategies.
+          </p>
+          <svg class="page-links-horizontal" viewbox="0 0 1000 100">
+            <a class="page-link" href="#band-members1">
+              <rect x="-230" y="0" width="240" height="100" fill="transparent"/>
+              <path stroke="hsl(250, 100%, 60%)" stroke-width="20" fill="transparent"
+                stroke-linecap="round" stroke-linejoin="round"
+                d="M 200,90
+                L 150,50
+                L 200,10
+              "/>
+            </a>
+            <a class="page-link" href="#header">
+              <rect x="380" y="0" width="240" height="100" fill="transparent"/>
+              <path stroke="hsl(250, 100%, 60%)" stroke-width="15" fill="transparent"
+                stroke-linecap="round"
+                d="M 425,20
+                H 575
+                M 425,50
+                H 575
+                M 425,80
+                H 575
+              "/>
+            </a>
+            <a class="page-link" href="#band-members3">
+              <rect x="970" y="0" width="240" height="100" fill="transparent"/>
+              <path stroke="hsl(250, 100%, 60%)" stroke-width="20" fill="transparent"
+                stroke-linecap="round" stroke-linejoin="round"
+                d="M 800,10
+                L 850,50
+                L 800,90
+              "/>
+            </a>
+          </svg>
+        </div>
+      </div>
+
+      <div id="band-members3" class="vp">
+        <div class="ur">
+          <img class="band-member-pic" src="./assets/visual/stefan-small.jpg" alt="Picture of no no no band member Stefan Opryshko." />
+          <h3 class="band-member-name">Stefan Opryshko</h3>
+          <h4 class="band-member-role">drums / logistics</h4>
+          <p class="band-member-write-up">
+            Stefan is an audio engineer and bee-keeper living in Toronto. He likes taste-tests, peanut-butter and snuggling with his cat Bernie.
+          </p>
+          <svg class="page-links-horizontal" viewbox="0 0 1000 100">
+            <a class="page-link" href="#band-members2">
+              <rect x="-230" y="0" width="240" height="100" fill="transparent"/>
+              <path stroke="hsl(250, 100%, 60%)" stroke-width="20" fill="transparent"
+                stroke-linecap="round" stroke-linejoin="round"
+                d="M 200,90
+                L 150,50
+                L 200,10
+              "/>
+            </a>
+            <a class="page-link" href="#header">
+              <rect x="380" y="0" width="240" height="100" fill="transparent"/>
+              <path stroke="hsl(250, 100%, 60%)" stroke-width="15" fill="transparent"
+                stroke-linecap="round"
+                d="M 425,20
+                H 575
+                M 425,50
+                H 575
+                M 425,80
+                H 575
+              "/>
+            </a>
+            <a class="page-link" href="#band-members4">
+              <rect x="970" y="0" width="240" height="100" fill="transparent"/>
+              <path stroke="hsl(250, 100%, 60%)" stroke-width="20" fill="transparent"
+                stroke-linecap="round" stroke-linejoin="round"
+                d="M 800,10
+                L 850,50
+                L 800,90
+              "/>
+            </a>
+          </svg>
+        </div>
+      </div>
+
+      <div id="band-members4" class="vp">
+        <div class="ur">
+          <img class="band-member-pic" src="./assets/visual/dree-small.jpg" alt="Picture of no no no band member Dreeko." />
+          <h3 class="band-member-name">Dree-ko</h3>
+          <h4 class="band-member-role">synths / nerdism</h4>
+          <p class="band-member-write-up">
+            Dreeko played a Korg Minilogue on 'Hunger' and 'Empty Mirror', and an Arturia Minibrute on the other tracks. They also played a Mini-Moog on 'Empty Mirror'.
+          </p>
+          <svg class="page-links-horizontal" viewbox="0 0 1000 100">
+            <a class="page-link" href="#band-members3">
+              <rect x="-230" y="0" width="240" height="100" fill="transparent"/>
+              <path stroke="hsl(250, 100%, 60%)" stroke-width="20" fill="transparent"
+                stroke-linecap="round" stroke-linejoin="round"
+                d="M 200,90
+                L 150,50
+                L 200,10
+              "/>
+            </a>
+            <a class="page-link" href="#header">
+              <rect x="380" y="0" width="240" height="100" fill="transparent"/>
+              <path stroke="hsl(250, 100%, 60%)" stroke-width="15" fill="transparent"
+                stroke-linecap="round"
+                d="M 425,20
+                H 575
+                M 425,50
+                H 575
+                M 425,80
+                H 575
+              "/>
+            </a>
+          </svg>
+        </div>
+      </div>
+
+    </section>
+
 
   </div>  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>

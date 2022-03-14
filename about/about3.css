@@ -1,0 +1,71 @@
+#row1 {
+  /* display: none; */
+}
+
+#band-members1 {
+  /* display: none; */
+}
+
+#band-members2 {
+  /* display: none; */
+}
+
+/* BACKGROUNDS /////////////////////////////////////// */
+
+/* HEADERS ////////////////////////////////////////////// */
+#band-members1 h2 {
+  top: 20%;
+  left: 7%
+}
+
+#band-members1 .header-row-link-container {
+  top: 35%;
+  left: 22.5%;
+}
+
+.band-member-name {
+  color: hsl(250, 100%, 80%);
+  height: 10%;
+  font-size: calc(var(--w)/11);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bungee Outline", sans-serif;
+}
+
+.band-member-role {
+  color: hsl(300, 100%, 30%);
+  height: 8%;
+  font-size: calc(var(--w)/15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* PICTURES //////////////////////////////////////////// */
+.band-member-pic {
+  object-fit: contain;
+  width: 100%;
+  height: 50%;
+  filter: grayscale(100%) sepia(100%) hue-rotate(250deg) saturate(500%) brightness(0.7); 
+}
+.band-member-write-up {
+  font-size: calc(var(--w)/25);
+  /* border: 1px solid red; */
+  height: 17%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (orientation: landscape) {
+  #background3 {
+    transform: scale(40%) translate(80%, -79%);
+  }
+
+  #band-members1 .header-row-link-container {
+    left: 21%;
+  }
+}

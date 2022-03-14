@@ -152,7 +152,7 @@ body {
   100% {background-size: 50%;}
 }
 @keyframes scale-down1 {
-  0% {transform: scale(200%) translateY(-15%);}
+  0% {transform: scale(150%) translate(-10%, -15%);}
   100% {transform: scale(100%);}
 }
 
@@ -257,11 +257,12 @@ header nav ul li a:hover, header nav ul li a:focus {
   }
 
   header .ur {
-    animation: scale-down1 10s ease-out forwards;
+    animation: scale-down1 12s ease-out forwards;
   }
 
   header nav ul {
     padding-bottom: 0%;
+    position: absolute;
     padding-top: 12%;
     padding-left: 7%;
   }
