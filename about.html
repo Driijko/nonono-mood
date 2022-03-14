@@ -67,18 +67,24 @@
     <div class="row">
 
       <!-- ABOUT ALBUM 1 /////////////////////////////////////////// -->
-      <div id="about-album1" class="vp">
+      <!-- <div id="about-album1" class="vp">
         <div class="ur">
           <svg id="background2" class="abs" viewbox="0 0 1000 1778">
+            <defs>
+              <radialGradient id="gradient1">
+                <stop offset="10%" stop-color="hsl(250, 100%, 50%)" />
+                <stop offset="95%" stop-color="hsl(250, 100%, 10%)" />
+              </radialGradient>
+            </defs>
             <path stroke-width="0" 
-              fill="white"
+              fill="url(#gradient1)"
               stroke-linejoin="round"
               d="M 500,100
               Q 100,200 500,300
-              Q 1000,500 500,1200
+              Q 1300,500 500,1200
               Q 100,1395 500,1495
               Q 900,1395 500,1200
-              Q 0,500 500,300
+              Q -300,500 500,300
               Q 900,200 500,100
               Q 0,1000 500,1200
               Q 1000,1000 500,100
@@ -87,7 +93,7 @@
           <h2>about <br class="mobile"/>the<br class="mobile"/> album</h2>
           <svg class="header-row-link-container" viewbox="0 0 100 100">
             <a href="#about-album2">
-              <rect x="5" y="5" width="90" height="90" fill="white"/>
+              <rect x="5" y="5" width="90" height="90" fill="hsl(250, 100%, 90%)"/>
               <path stroke="black" stroke-width="5" stroke-linecap="round"
                 stroke-linejoin="round" fill="black"
                 d="M 30,20
@@ -97,10 +103,10 @@
               "/>
             </a>
           </svg>
-          <svg class="page-links" viewbox="0 0 1000 100">
+          <svg class="page-links-vertical" viewbox="0 0 1000 100">
             <a class="page-link" href="#header">
               <rect x="-230" y="0" width="240" height="100" fill="transparent"/>
-              <path stroke="white" stroke-width="20" fill="transparent"
+              <path stroke="hsl(250, 100%, 60%)" stroke-width="20" fill="transparent"
                 stroke-linecap="round" stroke-linejoin="round"
                 d="M -10,90
                 L -110,15
@@ -109,7 +115,7 @@
             </a>
             <a class="page-link" href="#header">
               <rect x="380" y="0" width="240" height="100" fill="transparent"/>
-              <path stroke="white" stroke-width="20" fill="transparent"
+              <path stroke="hsl(250, 100%, 60%)" stroke-width="20" fill="transparent"
                 stroke-linecap="round"
                 d="M 400,10
                 H 600
@@ -121,7 +127,7 @@
             </a>
             <a class="page-link" href="#band-members1">
               <rect x="970" y="0" width="240" height="100" fill="transparent"/>
-              <path stroke="white" stroke-width="20" fill="transparent"
+              <path stroke="hsl(250, 100%, 60%)" stroke-width="20" fill="transparent"
                 stroke-linecap="round" stroke-linejoin="round"
                 d="M 1190,10
                 L 1090,85
@@ -130,11 +136,54 @@
             </a>
           </svg>
         </div>
-      </div>
+      </div> -->
 
+      <!-- ABOUT ALBUM 2 ////////////////////////////////// -->
       <div id="about-album2" class="vp">
         <div class="ur">
-
+          <div class="paragraph-container">
+            <p>
+              <span class="band-name">nonono</span> formed in Toronto during the winter of 2019, shortly before the arrival to Canada of the Covid pandemic. 
+            </p>
+            <p>
+              Forced into isolation, the project was an intimate space between three friends, attempting to articulate the sense of despair and alienation of a world burdened by climate change, ecological collapse, disease and neo-fascism.
+            </p>
+            <p>
+              At the same time, the project provided its members with the precious opportunity to connect and work together during a time of extreme isolation, fostering a sense of comradery and emotional cleansing.
+            </p>
+          </div>
+          <svg class="page-links-horizontal" viewbox="0 0 1000 100">
+            <a class="page-link" href="#header">
+              <rect x="-230" y="0" width="240" height="100" fill="transparent"/>
+              <path stroke="hsl(250, 100%, 60%)" stroke-width="20" fill="transparent"
+                stroke-linecap="round" stroke-linejoin="round"
+                d="M 200,90
+                L 150,50
+                L 200,10
+              "/>
+            </a>
+            <a class="page-link" href="#header">
+              <rect x="380" y="0" width="240" height="100" fill="transparent"/>
+              <path stroke="hsl(250, 100%, 60%)" stroke-width="15" fill="transparent"
+                stroke-linecap="round"
+                d="M 425,20
+                H 575
+                M 425,50
+                H 575
+                M 425,80
+                H 575
+              "/>
+            </a>
+            <a class="page-link" href="#band-members1">
+              <rect x="970" y="0" width="240" height="100" fill="transparent"/>
+              <path stroke="hsl(250, 100%, 60%)" stroke-width="20" fill="transparent"
+                stroke-linecap="round" stroke-linejoin="round"
+                d="M 800,10
+                L 850,50
+                L 800,90
+              "/>
+            </a>
+          </svg>
         </div>
       </div>
 

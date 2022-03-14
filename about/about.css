@@ -151,6 +151,10 @@ body {
   0% {background-size: 150%;}
   100% {background-size: 50%;}
 }
+@keyframes scale-down1 {
+  0% {transform: scale(200%) translateY(-15%);}
+  100% {transform: scale(100%);}
+}
 
 /* BACKGROUND-IMAGES ////////////////////////////// */
 #background1 {
@@ -175,6 +179,11 @@ body {
 header {
   color: white;
 }
+
+header .ur {
+  background-color: transparent;
+}
+
 header nav {
   height: 100%;
   font-family: "Plaster", sans-serif;
@@ -245,6 +254,10 @@ header nav ul li a:hover, header nav ul li a:focus {
     background-position: 30% 50%;
     animation: background-scale2 18s ease-out forwards, 
       blur1 18s linear forwards;
+  }
+
+  header .ur {
+    animation: scale-down1 10s ease-out forwards;
   }
 
   header nav ul {

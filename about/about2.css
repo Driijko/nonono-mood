@@ -1,10 +1,25 @@
+/* GENERAL /////////////////////////////////////////// */
+.vp {
+  background-color: black;
+}
+.ur {
+  background-color: hsl(250, 100%, 5%);
+}
+
 /* PAGE-LINKS ////////////////////////////////////// */
-.page-links {
+.page-links-vertical {
   position: absolute;
   bottom: 2%;
   width: 90%;
   left: 5%;
   height: 3%;
+}
+
+.page-links-horizontal {
+  position: absolute;
+  bottom: 4%;
+  width: 100%;
+  height: 5%;
 }
 
 .page-link {
@@ -39,7 +54,7 @@
   left: 43.5%;
   top: 45%;
   width: 13%;
-  border: 4px solid white;
+  border: calc(var(--w)/100) solid hsl(250, 100%, 60%);
 }
 
 /* HEADERS ////////////////////////////////////////// */
@@ -49,7 +64,7 @@ h2 {
   font-size: calc(var(--w)/11);
   text-align: center;
   position: absolute;
-  color: white;
+  color: hsl(250, 100%, 80%);
 }
 
 #about-album1 h2 {
@@ -57,16 +72,33 @@ h2 {
   top: 26%;
 }
 
-/* BACKGROUNDS /////////////////////////////////////// */
-#background2 {
-  background-color: black;
+/* PARAGRAPHS ////////////////////////////////////// */
+.paragraph-container {
+  height: 88%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+p {
+  color:hsl(250, 100%, 80%);
+  font-family: "Montserrat", sans-serif;
+  font-size: calc(var(--w)/20);
+  padding: 2% 5%;
+  line-height: 1.5;
+}
+
+.band-name {
+  color: hsl(300, 100%, 50%);
+  font-weight: bold;
 }
 
 @media only screen and (orientation: landscape) {
+  /* BACKGROUNDS --------------------------------------- */
   #background2 path {
-    transform: scale(40%) translate(-10%, -1%);
+    transform: scale(40%) translate(0%, -1%);
   }
 
+  /* HEADERS ------------------------------------------------ */
   h2 {
     font-size: calc(var(--w)/20);
   }
@@ -77,8 +109,17 @@ h2 {
     letter-spacing: calc(var(--w)/200);
   }
 
+  /* PAGE-LINKS ----------------------------------------------- */
   #about-album1 .header-row-link-container {
     width: 7%;
     left: 60%;
+    border-color: hsl(250, 100%, 30%);
   }
+
+  /* PARAGRAPHS -------------------------------------------- */
+  p {
+    font-size: calc(var(--w)/50);
+    padding: 2% 20%;
+  }
+
 }
