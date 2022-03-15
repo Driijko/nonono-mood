@@ -103,6 +103,7 @@ body {
 /* GENERAL ///////////////////////////////////////////// */
 .vp {
   background-color: hsl(250, 100%, 5%);
+  font-family: "Iceland";
 }
 
 .ur {
@@ -114,6 +115,18 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Iceland";
+  border: none;
+  transition-property: box-shadow, transform, background-color, border, color;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+
+button:hover, button:focus {
+  box-shadow: hsl(250, 100%, 40%) 0px 0px calc(var(--w)/10);
+  transform: scale(110%);
+  border: calc(var(--w)/100) solid hsl(250, 100%, 50%);
+  color: hsl(300, 100%, 60%);
 }
 
 /* MENU /////////////////////////////////////////////// */
@@ -143,8 +156,9 @@ menu button {
   width: 100%;
   height: 80%;
   font-size: calc(var(--w)/15);
-  background-color: black;
-  color: white;
+  background-color: hsl(250, 100%, 5%);
+  color: hsl(250, 100%, 60%);
+  border: calc(var(--w)/200) hsl(250, 100%, 10%) solid;
 }
 
 #about-button-container {
@@ -157,7 +171,7 @@ menu button {
 
 /* TRACK NAME ------------------------------------------------ */
 h2 {
-  color: white;
+  color: hsl(250, 100%, 70%);
   position: absolute;
   width: 100%;
   top: 86%;
@@ -176,6 +190,15 @@ h2 {
   width: 10%;
   height: 5%;
   border-width: 0;
+  background-color: hsl(250, 100%, 10%);
+}
+
+#pause-play-button:hover, #pause-play-button:focus {
+  background-color: black;
+}
+
+#pause-play-button:hover path, #pause-play-button:focus path {
+  fill: hsl(300, 100%, 60%);
 }
 
 #pause-play-icon {
@@ -201,7 +224,7 @@ h2 {
 
   /* TRACK NAME ----------------------------------------- */
   h2 {
-    font-size: calc(var(--w)/25);
+    font-size: calc(var(--w)/30);
     right: 1%;
     width: 42%;
     top: 92%;
