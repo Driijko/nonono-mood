@@ -109,6 +109,7 @@ i {
   scroll-snap-type: x mandatory;
   display: flex;
   overflow-x: scroll;
+  overflow-y: hidden;
   scroll-behavior: smooth;
   scrollbar-width: none;
 }

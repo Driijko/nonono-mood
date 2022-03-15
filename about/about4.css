@@ -1,0 +1,123 @@
+header, #row1, #row2, #web-design1, #web-design2 {
+  display: none !important;
+}
+
+
+
+/* HEADERS ////////////////////////////////////// */
+#web-design1 h2 {
+  top: 62%;
+  left: 24%;
+}
+
+#web-design3 h3 {
+  padding-top: 2%;
+  color: hsl(250, 100%, 50%);
+  font-size: calc(var(--w)/5);
+  font-family: "Bungee Outline", sans-serif;
+  text-align: center;
+}
+
+#web-design3 p {
+  padding-top: 8%;
+}
+
+/* PAGE-LINKS //////////////////////////////////////// */
+#web-design1 .header-row-link-container {
+  left: 44%;
+  top: 72%;
+}
+
+/* DREEKO PROFILE //////////////////////////////////////// */
+#dreeko-logo {
+  object-fit: contain;
+  width: 100%;
+  height: 20%;
+}
+
+#web-design2 .ur {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-bottom: 30%;
+}
+
+/* FONTS-LIST //////////////////////////////////////////////// */
+#fonts-list {
+  padding-top: 10%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: hsl(250, 100%, 80%);
+  font-size: calc(var(--w)/15);
+}
+
+#fonts-list li {
+  height: 17%;
+}
+
+#fonts-list a {
+  height: 100%;
+  text-align: center;
+  border-top:hsl(250, 100%, 50%) solid calc(var(--w)/200);
+}
+
+#fonts-list a:hover, #fonts-list a:focus {
+  background-color: hsl(250, 100%, 20%);
+  color: magenta;
+}
+
+.hubballi {
+  font-family: "Hubballi", cursive;
+  font-size: calc(var(--w)/11);
+}
+
+.quicksand {
+  font-family: "Quicksand", sans-serif;
+}
+
+.plaster {
+  font-family: "Plaster", cursive;
+}
+
+.bungee-outline {
+  font-family: "Bungee Outline", cursive;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.ubuntu {
+  font-family: "Ubuntu", sans-serif;
+}
+
+
+
+@media only screen and (orientation: landscape) {
+  /* BACKGROUNDS //////////////////////////// */
+  #background4 {
+    transform: scale(110%, 30%) translate(0%, -110%);
+  }
+  /* HEADERS //////////////////////////////////// */
+  #web-design1 h2 {
+    left: 27%;
+  }
+
+  /* PAGE-LINKS //////////////////////////////////// */
+  #web-design1 .header-row-link-container {
+    left: 65%;
+    top: 61%;
+  }
+
+  /* DREEKO PROFILE ////////////////////////////////////// */
+  #web-design2 .ur {
+    padding-bottom: 7%;
+  }
+
+  #dreeko-logo {
+    height: 40%;
+    padding: 0;
+  }
+}

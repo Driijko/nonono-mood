@@ -105,14 +105,14 @@ p {
   text-align: center;
 }
 
-#bandcamp-link {
+.external-inline-link {
   display: inline;
   text-decoration: underline;
   color: hsl(250, 100%, 70%);
   font-weight: bold;
 }
 
-#bandcamp-link:hover, #bandcamp-link:focus {
+.external-inline-link:hover, .external-inline-link:focus {
   color: magenta;
 }
 

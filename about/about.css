@@ -95,6 +95,7 @@ body {
   scroll-snap-type: x mandatory;
   display: flex;
   overflow-x: scroll;
+  overflow-y:hidden;
   scroll-behavior: smooth;
   scrollbar-width: none;
 }
@@ -152,7 +153,7 @@ body {
   100% {background-size: 50%;}
 }
 @keyframes scale-down1 {
-  0% {transform: scale(150%) translate(-10%, -15%);}
+  0% {transform: scale(150%) translate(-10%, -20%);}
   100% {transform: scale(100%);}
 }
 
@@ -190,6 +191,7 @@ header nav {
 }
 
 header nav ul {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -265,6 +267,7 @@ header nav ul li a:hover, header nav ul li a:focus {
     position: absolute;
     padding-top: 12%;
     padding-left: 7%;
+    /* animation: fade-in 8s linear forwards; */
   }
 
   header nav ul li {

@@ -1,21 +1,3 @@
-header {
-  /* display: none !important; */
-}
-
-#row1 {
-  /* display: none; */
-}
-
-#band-members1 {
-  /* display: none; */
-}
-
-#band-members2 {
-  /* display: none; */
-}
-
-/* BACKGROUNDS /////////////////////////////////////// */
-
 /* HEADERS ////////////////////////////////////////////// */
 #band-members1 h2 {
   top: 20%;
@@ -56,8 +38,7 @@ header {
   filter: grayscale(100%) sepia(100%) hue-rotate(250deg) saturate(500%) brightness(0.7); 
 }
 .band-member-write-up {
-  font-size: calc(var(--w)/25);
-  /* border: 1px solid red; */
+  font-size: calc(var(--w)/23);
   height: 17%;
   display: flex;
   justify-content: center;
@@ -65,11 +46,45 @@ header {
 }
 
 @media only screen and (orientation: landscape) {
+  /* BACKGROUNDS /////////////////////////////////////// */
   #background3 {
     transform: scale(40%) translate(80%, -79%);
   }
 
+  /* PAGE-LINKS ///////////////////////////////////////// */
   #band-members1 .header-row-link-container {
     left: 21%;
+  }
+
+  /* BAND MEMBER PROFILES /////////////////////////////////// */
+  .band-member-pic {
+    /* border: 4px solid red; */
+    position: absolute;
+    width: 50%;
+    height: 85%;
+    padding: 8%;
+  }
+
+  .band-member-name, .band-member-role, .band-member-write-up {
+    position: absolute;
+    width: 58%;
+    left: 42%;
+  }
+
+  .band-member-name {
+    font-size: calc(var(--w)/20);
+    top: 20%;
+  }
+
+  .band-member-role {
+    font-size: calc(var(--w)/25);
+    top: 35%;
+  }
+
+  .band-member-write-up {
+    font-size: calc(var(--w)/50);
+    padding: 0%;
+    top: 50%;
+    padding: 0% 4%;
   }
 }
