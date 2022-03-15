@@ -159,17 +159,20 @@ menu button {
 h2 {
   color: white;
   position: absolute;
-  width: 50%;
-  top: 83%;
-  text-align: right;
-  font-size: calc(var(--w)/12);
+  width: 100%;
+  top: 86%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: calc(var(--w)/15);
 }
 
 /* PAUSE-PLAY BUTTON --------------------------------------------- */
 #pause-play-button {
   position: absolute;
-  left: 60%;
-  top: 83%;
+  left: 45%;
+  top: 80%;
   width: 10%;
   height: 5%;
   border-width: 0;
