@@ -1,0 +1,179 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+  display: block;
+}
+a:focus {
+	outline: none;
+}
+
+/* CSS TOOLS ////////////////////////////////////////// */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  height: 100%;
+  -ms-overflow-style: none;
+  overflow: hidden;
+  overflow: -moz-scrollbars-none; 
+}
+
+/* Chrome and Safari */
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  /* Prevent address bar from disappearing on mobile. */
+  position: fixed;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.vp {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  /* This allows us to use rows properly as otherwise
+  these divs will shrink down. */
+  flex: none;
+}
+
+.ur {
+  position: relative;
+  width: var(--w);
+  height: var(--h);
+}
+
+
+/* GENERAL ///////////////////////////////////////////// */
+.vp {
+  background-color: hsl(250, 100%, 5%);
+}
+
+.ur {
+  background-color: black;
+}
+
+/* MENU /////////////////////////////////////////////// */
+menu {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  bottom: 0%;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+li {
+  height: 100%;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+menu button {
+  width: 100%;
+  height: 80%;
+  font-size: calc(var(--w)/15);
+  background-color: black;
+  color: white;
+}
+
+#about-button-container {
+  width: 15%;
+}
+
+#about-button-container button {
+  font-size: calc(var(--w)/20);
+}
+
+/* TRACK NAME ------------------------------------------------ */
+h2 {
+  color: white;
+  position: absolute;
+  width: 50%;
+  top: 83%;
+  text-align: right;
+  font-size: calc(var(--w)/12);
+}
+
+/* PAUSE-PLAY BUTTON --------------------------------------------- */
+#pause-play-button {
+  position: absolute;
+  left: 60%;
+  top: 83%;
+  width: 10%;
+  height: 5%;
+}
+
+@media only screen and (orientation: landscape) {
+
+  /* BUTTON MENU ///////////////////////////////////////////// */
+  menu {
+    width: 50%;
+  }
+
+  menu button {
+    font-size: calc(var(--w)/30);
+  }
+
+  #about-button-container button {
+    font-size: calc(var(--w)/40);
+  }
+}

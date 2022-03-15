@@ -15,7 +15,7 @@
   <meta name="description" content="'mood' is an album from Toronto band nonono. Created during the Covid pandemic, it reflects the despair and melancholy of a world on fire. Musically it mixes trip-hop, experimental and psychedelic styles." />
 
   <!-- BROWSER TAB ///////////////////////////////////// -->
-  <title>nonono - moodi</title>
+  <title>nonono - mood</title>
   <!-- <link rel="icon" type="image/png" href="./favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -30,15 +30,78 @@
   <meta property="og:url" content="" />         
 
   <!-- CSS //////////////////////////////////////////// -->
-  <link rel="stylesheet" type="text/css" href="./about/about.css" />
+  <link rel="stylesheet" type="text/css" href="./tracks/tracks.css" />
 
   <!-- GOOGLE FONTS ///////////////// -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plaster&family=Ubuntu&display=swap" rel="stylesheet"> 
   
 </head>
 <body>
-
+  <div class="vp">
+    <div class="ur">
+      <h2>Hunger</h2>
+      <button id="pause-play-button">
+        <svg id="pause-play-icon" viewbox="0 0 100 100">
+          <!-- <path 
+            d="M 30,20
+            L 80,50
+            L 30,80
+          Z"/> -->
+          <!-- <path id="pause-play-icon1" />
+          <path id="pause-play-icon2" /> -->
+          <path id="pause-play-icon1"
+            d="M 30,20
+            L 55,35
+            L 55,65
+            L 30,80
+          Z"/>
+          <path id="pause-play-icon2"
+            fill="black"
+            d="M 55,35
+            L 80,50
+            L 55,65
+            L 54,65
+          Z"/>
+          <!-- <path d="
+            M 25,20
+            L 45,20
+            L 45,80
+            L 25,80
+          Z"/>
+          <path d="
+            M 55,20
+            L 75,20
+            L 75,80
+            L 55,80
+          Z"/> -->
+        </svg>
+      </button>
+      <menu>
+        <ul>
+          <li>
+            <button type="button">1</button>
+          </li>
+          <li>
+            <button type="button">2</button>
+          </li>
+          <li>
+            <button type="button">3</button>
+          </li>
+          <li>
+            <button type="button">4</button>
+          </li>
+          <li>
+            <button type="button">5</button>
+          </li>
+          <li id="about-button-container">
+            <button type="button">about</button>
+          </li>
+        </ul>
+      </menu>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="./tracks/tracks.js"></script>
 </body>
 </html>
