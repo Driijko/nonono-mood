@@ -42,6 +42,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+button {
+  display: block;
+  padding: 0;
+}
 a {
 	text-decoration: none;
 	color: inherit;
@@ -105,6 +109,13 @@ body {
   background-color: black;
 }
 
+button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* MENU /////////////////////////////////////////////// */
 menu {
   position: absolute;
@@ -117,6 +128,7 @@ ul {
   display: flex;
   justify-content: space-evenly;
   height: 100%;
+  width: 100%;
 }
 
 li {
@@ -140,7 +152,7 @@ menu button {
 }
 
 #about-button-container button {
-  font-size: calc(var(--w)/20);
+  font-size: calc(var(--w)/25);
 }
 
 /* TRACK NAME ------------------------------------------------ */
@@ -160,6 +172,13 @@ h2 {
   top: 83%;
   width: 10%;
   height: 5%;
+  border-width: 0;
+}
+
+#pause-play-icon {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 @media only screen and (orientation: landscape) {
@@ -175,5 +194,23 @@ h2 {
 
   #about-button-container button {
     font-size: calc(var(--w)/40);
+  }
+
+  /* TRACK NAME ----------------------------------------- */
+  h2 {
+    font-size: calc(var(--w)/25);
+    right: 1%;
+    width: 42%;
+    top: 92%;
+    /* border: 1px solid green; */
+    text-align: left;
+  }
+
+  /* PAUSE-PLAY-BUTTON ---------------------------------------- */
+  #pause-play-button {
+    width: 5%;
+    height: 8%;
+    left: 50%;
+    top: 90.5%;
   }
 }

@@ -57,6 +57,10 @@ window.addEventListener("resize", ()=> {
   }
 });
 
+// TRACK NAME //////////////////////////////////////////////
+let trackName = document.getElementById("track-name");
+trackName.innerHTML = "Can";
+
 // PLAY-PAUSE-BUTTON //////////////////////////////////////////
 let buttonState = "play";
 function switchToPause() {
