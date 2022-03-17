@@ -221,6 +221,10 @@ h2 {
 
 @media only screen and (orientation: landscape) {
 
+  .mobile {
+    display: none;
+  }
+
   /* GENERAL //////////////////////////////////////////////// */
 
   button:hover, button:focus, a:hover, a:focus {

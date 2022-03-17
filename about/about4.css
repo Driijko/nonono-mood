@@ -114,4 +114,23 @@
     height: 40%;
     padding: 0;
   }
+
+  /* FONTS /////////////////////////////////////////////// */
+  #web-design3 h3 {
+    font-size: calc(var(--w)/10);
+  }
+
+  #web-design3 p {
+    padding-top: 2%;
+  }
+
+  #fonts-list {
+    padding-top: 1%;
+    font-size: calc(var(--w)/30);
+  }
+ 
+  .hubballi {
+    font-size: calc(var(--w)/25);
+  }
+
 }
