@@ -103,7 +103,6 @@ body {
 /* GENERAL ///////////////////////////////////////////// */
 .vp {
   background-color: hsl(250, 100%, 5%);
-  font-family: "Iceland";
 }
 
 .ur {
@@ -116,6 +115,8 @@ button {
   justify-content: center;
   align-items: center;
   font-family: "Iceland";
+  font-family: "East Sea Dokdo";
+  font-family: "Sirin Stencil";
   border: none;
   transition-property: box-shadow, transform, background-color, border, color;
   transition-duration: 1s;
@@ -180,6 +181,10 @@ h2 {
   align-items: center;
   text-align: center;
   font-size: calc(var(--w)/15);
+  font-family: "Iceland";
+  letter-spacing: calc(var(--w)/100);
+  /* font-family: "East Sea Dokdo";
+  font-family: "Sirin Stencil"; */
 }
 
 /* PAUSE-PLAY BUTTON --------------------------------------------- */
@@ -209,6 +214,13 @@ h2 {
 
 @media only screen and (orientation: landscape) {
 
+  /* GENERAL //////////////////////////////////////////////// */
+
+  button:hover, button:focus {
+    box-shadow: hsl(250, 100%, 50%) 0px calc((var(--w)/100) * -1) calc(var(--w)/20);
+    border-width: calc(var(--w)/200);
+  }
+
   /* BUTTON MENU ///////////////////////////////////////////// */
   menu {
     width: 50%;
@@ -224,10 +236,12 @@ h2 {
 
   /* TRACK NAME ----------------------------------------- */
   h2 {
-    font-size: calc(var(--w)/30);
+    /* font-size: calc(var(--w)/30); */
+    font-size: calc(var(--w)/21);
     right: 1%;
     width: 42%;
     top: 92%;
+    top: 90%;
     /* border: 1px solid green; */
     text-align: left;
   }

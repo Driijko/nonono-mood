@@ -66,11 +66,23 @@ window.addEventListener("resize", ()=> {
 
 // TRACK NAME //////////////////////////////////////////////
 let trackNameElement = document.getElementById("track-name");
-trackNameElement.innerHTML = "Can";
+trackNameElement.innerHTML = "Black Rainbow / Black Gold";
 
 function switchTrackName(trackName) {
-  trackNameElement.innerHTML = trackName; 
+  const tl = gsap.timeline();
+  tl.to(trackNameElement, {
+    duration: 1,
+    transform: "rotateY(90deg)", 
+  });
+  tl.to(trackNameElement, {
+    duration: 1,
+    transform: "rotateY(0deg)",
+  })
+  setTimeout(()=> {
+    trackNameElement.innerHTML = trackName; 
+  }, 1000);
 }
+
 
 // TRACK BUTTONS ////////////////////////////////////////////
 for (let trackButton of document.getElementsByClassName("track-button")) {
