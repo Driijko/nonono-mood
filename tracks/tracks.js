@@ -66,7 +66,7 @@ window.addEventListener("resize", ()=> {
 
 // TRACK NAME //////////////////////////////////////////////
 let trackNameElement = document.getElementById("track-name");
-trackNameElement.innerHTML = "Black Rainbow / Black Gold";
+trackNameElement.innerHTML = "Hunger";
 
 function switchTrackName(trackName) {
   const tl = gsap.timeline();
@@ -100,6 +100,18 @@ for (let trackButton of document.getElementsByClassName("track-button")) {
     }
   });
 }
+
+// ABOUT LINK ///////////////////////////////////////////////////
+document.getElementById("about-link").addEventListener("click", e => {
+  e.preventDefault();
+  gsap.to(".vp", {
+    duration: 5,
+    filter: `blur(${width/20}px)`,
+  });
+  setTimeout(()=> {
+    window.location.href="./about.html";
+  },5000)
+});
 
 // PLAY-PAUSE-BUTTON //////////////////////////////////////////
 let buttonState = "play";
