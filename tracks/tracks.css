@@ -103,9 +103,13 @@ body {
 }
 
 
+/* ANIMATIONS //////////////////////////////////////////// */
+@keyframes blur-in {from {filter:blur(calc(var(--w)/30))}; to{filter: blur(0)}}
+
 /* GENERAL ///////////////////////////////////////////// */
 .vp {
   background-color: hsl(250, 100%, 5%);
+  animation: blur-in 5s ease-out forwards;
 }
 
 .ur {
@@ -219,7 +223,7 @@ h2 {
 
   /* GENERAL //////////////////////////////////////////////// */
 
-  button:hover, button:focus {
+  button:hover, button:focus, a:hover, a:focus {
     box-shadow: hsl(250, 100%, 50%) 0px calc((var(--w)/100) * -1) calc(var(--w)/20);
     border-width: calc(var(--w)/200);
   }
@@ -233,7 +237,7 @@ h2 {
     font-size: calc(var(--w)/30);
   }
 
-  #about-button-container button {
+  #about-button-container a {
     font-size: calc(var(--w)/40);
   }
 
