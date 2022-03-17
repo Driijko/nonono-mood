@@ -40,7 +40,96 @@
 </head>
 <body>
   <div class="vp">
+    <svg id="track-animation" viewbox="0 0 1000 1778" preserveAspectRatio="none">
+      <path class="triangle" fill="hsl(250, 100%, 1%)"
+        d="M 500,-300
+        L 2200,1780
+        L -1200,1780
+      Z"/>
+      <path class="triangle" fill="hsl(250, 100%, 1%)"
+        d="M 500,-200
+        L 2100,1780
+        L -1100,1780
+      Z"/>
+      <path class="triangle" fill="hsl(250, 100%, 1%)"
+        d="M 500,-100
+        L 2000,1780
+        L -1000,1780
+      Z"/>
+      <path class="triangle" fill="hsl(250, 100%, 1%)"
+        d="M 500,0
+        L 1900,1780
+        L -900,1780
+      Z"/>
+      <path class="triangle" fill="hsl(250, 100%, 1%)"
+        d="M 500,100
+        L 1800,1780
+        L -800,1780
+      Z"/>
+      <path class="triangle" fill="hsl(250, 100%, 1%)"
+        d="M 500,200
+        L 1700,1780
+        L -700,1780
+      Z"/>
+      <path class="triangle" fill="hsl(250, 100%, 1%)"
+        d="M 500,300
+        L 1600,1780
+        L -600,1780
+      Z"/>
+      <path class="triangle" fill="hsl(250, 100%, 1%)"
+        d="M 500,400
+        L 1500,1780
+        L -500,1780
+      Z"/>
+      <path class="triangle" fill="hsl(250, 100%, 1%)"
+        d="M 500,500
+        L 1400,1780
+        L -400,1780
+      Z"/> 
+      <path class="triangle" fill="hsl(250, 100%, 1%)"
+        d="M 500,600
+        L 1300,1780
+        L -300,1780
+      Z"/> 
+      <path class="triangle" fill="hsl(250, 100%, 1%)"
+        d="M 500,700
+        L 1200,1780
+        L -200,1780
+      Z"/> 
+      <path class="triangle" fill="hsl(250, 100%, 1%)"
+        d="M 500,800
+        L 1100,1780
+        L -100,1780
+      Z"/> 
+      <path class="triangle" fill="hsl(250, 100%, 1%)"
+        d="M 500,900
+        L 1000,1780
+        L 0,1780
+      Z"/> 
+      <path class="triangle" fill="hsl(250, 100%, 1%)"
+        d="M 500,1000
+        L 900,1780
+        L 100,1780
+      Z"/>         
+      <path class="triangle" fill="hsl(250, 100%, 1%)"
+        d="M 500,1100
+        L 800,1780
+        L 200,1780
+      Z"/>        
+      <path class="triangle" fill="hsl(250, 100%, 1%)"
+        d="M 500,1200
+        L 700,1780
+        L 300,1780
+      Z"/>
+      <path class="triangle" fill="hsl(250, 100%, 1%)"
+        d="M 500,1300
+        L 600,1780
+        L 400,1780
+      Z"/>
+    </svg>
     <div class="ur">
+      <audio id="audio-player" src="./assets/audio/hunger.mp3"></audio>
+
       <h2 id="track-name">Hunger</h2>
       <button id="pause-play-button">
         <svg id="pause-play-icon" viewbox="0 0 100 100">
@@ -62,19 +151,24 @@
       <menu>
         <ul>
           <li>
-            <button id="hunger" class="track-button" type="button" autofocus>1</button>
+            <input type="radio" id="track1" name="track-options" checked/>
+            <label class="track-button" id="hunger" for="track1">1</label>
           </li>
           <li>
-            <button id="can" class="track-button" type="button">2</button>
+            <input type="radio" id="track2" name="track-options" />
+            <label id="can" class="track-button" for="track2">2</label>
           </li>
           <li>
-            <button id="empty-mirror" class="track-button" type="button">3</button>
+            <input type="radio" id="track3" name="track-options" />
+            <label id="empty-mirror" class="track-button" for="track3">3</label>
           </li>
           <li>
-            <button id="black-rainbow" class="track-button" type="button">4</button>
+            <input type="radio" id="track4" name="track-options" />
+            <label id="black-rainbow" class="track-button" for="track4">4</label>
           </li>
           <li>
-            <button id="police-truck" class="track-button" type="button">5</button>
+            <input type="radio" id="track5" name="track-options" />
+            <label id="police-truck" class="track-button" for="track5">5</label>
           </li>
           <li id="about-button-container">
             <a id="about-link" href="./about.html">about</a>
@@ -84,6 +178,7 @@
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="./tracks/tracks2.js"></script>
   <script src="./tracks/tracks.js"></script>
 </body>
 </html>

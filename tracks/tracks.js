@@ -64,6 +64,12 @@ window.addEventListener("resize", ()=> {
   }
 });
 
+// TRACK ANIMATIONS /////////////////////////////////////////
+let currentAnimation = tl1;
+
+// AUDIO ELEMENT /////////////////////////////////////////////
+const audioPlayer = document.getElementById("audio-player");
+
 // TRACK NAME //////////////////////////////////////////////
 let trackNameElement = document.getElementById("track-name");
 trackNameElement.innerHTML = "Hunger";
@@ -83,39 +89,11 @@ function switchTrackName(trackName) {
   }, 1000);
 }
 
-
-// TRACK BUTTONS ////////////////////////////////////////////
-for (let trackButton of document.getElementsByClassName("track-button")) {
-  trackButton.addEventListener("click", e => {
-    if (e.target.id === "hunger") {
-      switchTrackName("Hunger");
-    } else if (e.target.id === "can") {
-      switchTrackName("Can");
-    } else if (e.target.id === "empty-mirror") {
-      switchTrackName("Empty Mirror");
-    } else if (e.target.id === "black-rainbow") {
-      switchTrackName("Black Rainbow / Black Gold");
-    } else if (e.target.id === "police-truck") {
-      switchTrackName("Police Truck");
-    }
-  });
-}
-
-// ABOUT LINK ///////////////////////////////////////////////////
-document.getElementById("about-link").addEventListener("click", e => {
-  e.preventDefault();
-  gsap.to(".vp", {
-    duration: 5,
-    filter: `blur(${width/20}px)`,
-  });
-  setTimeout(()=> {
-    window.location.href="./about.html";
-  },5000)
-});
-
 // PLAY-PAUSE-BUTTON //////////////////////////////////////////
 let buttonState = "play";
 function switchToPause() {
+  buttonState = "pause";
+  currentAnimation.play();
   gsap.to("#pause-play-icon1", {
     duration: 1,
     attr: {
@@ -132,6 +110,8 @@ function switchToPause() {
 };
 
 function switchToPlay() {
+  buttonState = "play";
+  currentAnimation.pause();
   gsap.to("#pause-play-icon1", {
     duration: 1,
     attr: {
@@ -149,12 +129,49 @@ function switchToPlay() {
 
 document.getElementById("pause-play-button").addEventListener("click", e => {
   if (buttonState === "play") {
-    buttonState = "pause";
     switchToPause();
+    audioPlayer.play();
   } else {
-    buttonState = "play";
     switchToPlay();
+    audioPlayer.pause();
   }
+});
+
+// TRACK BUTTONS ////////////////////////////////////////////
+for (let trackButton of document.getElementsByClassName("track-button")) {
+  trackButton.addEventListener("click", e => {
+    if (e.target.id === "hunger") {
+      switchTrackName("Hunger");
+      audioPlayer.src = "./assets/audio/hunger.mp3";
+    } else if (e.target.id === "can") {
+      switchTrackName("Can");
+      audioPlayer.src = "./assets/audio/can.mp3";
+    } else if (e.target.id === "empty-mirror") {
+      switchTrackName("Empty Mirror");
+      audioPlayer.src = "./assets/audio/empty-mirror.mp3";
+    } else if (e.target.id === "black-rainbow") {
+      switchTrackName("Black Rainbow / Black Gold");
+      audioPlayer.src = "./assets/audio/black-rainbow-black-gold.mp3";
+    } else if (e.target.id === "police-truck") {
+      switchTrackName("Police Truck");
+      audioPlayer.src = "./assets/audio/police-truck.mp3"
+    };
+    if (buttonState = "pause") {
+      switchToPlay();
+    };
+  });
+}
+
+// ABOUT LINK ///////////////////////////////////////////////////
+document.getElementById("about-link").addEventListener("click", e => {
+  e.preventDefault();
+  gsap.to(".vp", {
+    duration: 5,
+    filter: `blur(${width/20}px)`,
+  });
+  setTimeout(()=> {
+    window.location.href="./about.html";
+  },5000)
 });
 
 
