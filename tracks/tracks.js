@@ -143,6 +143,8 @@ document.getElementById("pause-play-button").addEventListener("click", e => {
 for (let trackButton of document.getElementsByClassName("track-button")) {
   trackButton.addEventListener("click", e => {
     currentAnimationElement.style.display = "none";
+    currentAnimation.restart();
+    currentAnimation.pause();
     if (e.target.id === "hunger") {
       currentAnimationElement = document.getElementById("track-animation1");
       currentAnimation = tl1;

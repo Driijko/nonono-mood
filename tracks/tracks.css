@@ -238,7 +238,7 @@ h2 {
   position: absolute;
 }
 
-#track-animation1 {
+#track-animation4 {
   filter: blur(calc(var(--w)/40));
 }
 
