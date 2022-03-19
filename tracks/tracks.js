@@ -66,6 +66,8 @@ window.addEventListener("resize", ()=> {
 
 // TRACK ANIMATIONS /////////////////////////////////////////
 let currentAnimation = tl1;
+let currentAnimationElement = document.getElementById("track-animation1");
+currentAnimationElement.style.display = "block";
 
 // AUDIO ELEMENT /////////////////////////////////////////////
 const audioPlayer = document.getElementById("audio-player");
@@ -140,25 +142,37 @@ document.getElementById("pause-play-button").addEventListener("click", e => {
 // TRACK BUTTONS ////////////////////////////////////////////
 for (let trackButton of document.getElementsByClassName("track-button")) {
   trackButton.addEventListener("click", e => {
+    currentAnimationElement.style.display = "none";
     if (e.target.id === "hunger") {
+      currentAnimationElement = document.getElementById("track-animation1");
+      currentAnimation = tl1;
       switchTrackName("Hunger");
       audioPlayer.src = "./assets/audio/hunger.mp3";
     } else if (e.target.id === "can") {
+      currentAnimationElement = document.getElementById("track-animation2");
+      currentAnimation = tl2;
       switchTrackName("Can");
       audioPlayer.src = "./assets/audio/can.mp3";
     } else if (e.target.id === "empty-mirror") {
+      currentAnimationElement = document.getElementById("track-animation3");
+      currentAnimation = tl3;
       switchTrackName("Empty Mirror");
       audioPlayer.src = "./assets/audio/empty-mirror.mp3";
     } else if (e.target.id === "black-rainbow") {
+      currentAnimationElement = document.getElementById("track-animation4");
+      currentAnimation = tl4;
       switchTrackName("Black Rainbow / Black Gold");
       audioPlayer.src = "./assets/audio/black-rainbow-black-gold.mp3";
     } else if (e.target.id === "police-truck") {
+      currentAnimationElement = document.getElementById("track-animation5");
+      currentAnimation = tl5;
       switchTrackName("Police Truck");
       audioPlayer.src = "./assets/audio/police-truck.mp3"
     };
     if (buttonState = "pause") {
       switchToPlay();
     };
+    currentAnimationElement.style.display = "block";
   });
 }
 
