@@ -239,7 +239,7 @@ h2 {
 }
 
 #track-animation1 {
-  filter: blur(20px);
+  filter: blur(calc(var(--w)/50));
 }
 
 #group4-1 {
