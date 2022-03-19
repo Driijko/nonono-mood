@@ -304,4 +304,9 @@ h2 {
     left: 50%;
     top: 90%;
   }
+
+  /* TRACK ANIMATIONS -------------------------------------------- */
+  #track-animation1 {
+    filter: blur(calc(var(--w)/120));
+  }
 }

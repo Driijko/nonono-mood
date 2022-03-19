@@ -16,7 +16,7 @@
 //   strokeWidth: 1,
 // });
 // tl1.pause();
-const duration = 5;
+const duration = 50;
 let tl1 = gsap.timeline({yoyo:true, repeat: 10, repeatDelay:5});
 tl1.to("#rect4-1", {
   duration: duration,
