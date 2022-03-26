@@ -16,25 +16,212 @@
 //   strokeWidth: 1,
 // });
 // tl1.pause();
-let tl1 = gsap.timeline({yoyo:true});
-tl1.to("#circle2-6", {
-  fill: "hsla(50, 100%, 50%, 1)",
-  // duration: 0.261,
-  duration: 0.53,
+
+// Can animation ------------------------------------------------
+let tl2 = gsap.timeline({repeat: -1, delay: 0.28});
+tl2.set(".rects2", {transformOrigin: "50% 50%"});
+tl2.set(".rects2-2", {transformOrigin: "50% 50%"});
+
+tl2.to("#rect2-1", {
+  duration: 5,
+  ease: "power4.in",
+  opacity: 1,
+}, 0);
+tl2.to("#rect2-1", {
+  duration: 1.05,
+  ease: "power4.out",
+  rotation: 360,
+  repeat: -1,
+}, 6);
+tl2.to("#circle2-1", {
+  duration: 0.5,
+  repeat: -1,
+  fill: "hsl(25, 100%, 50%)",
   ease: "steps(1)",
+},0);
+tl2.to(".rects2-2", {
+  duration:7,
+  opacity: 1,
+  ease: "none",
+  stagger: 7,
+},25);
+tl2.to("#rect2-2-1", {
+  duration: 600,
+  rotation: 10000,
+  ease: "none",
+}, 32);
+tl2.to("#rect2-2-2", {
+  duration: 600,
+  rotation: -10000,
+  ease: "none",
+}, 39);
+tl2.to("#rect2-2-3", {
+  duration: 600,
+  rotation: 10000,
+  ease: "none",
+}, 46);
+tl2.to("#rect2-2-4", {
+  duration: 600,
+  rotation: -10000,
+  ease: "none",
+}, 53);
+tl2.to("#rect2-2-5", {
+  duration: 600,
+  rotation: 10000,
+  ease: "none",
+}, 60);
+tl2.to("#circle2-2", {
+  duration: 0.5,
+  repeat: -1,
+  fill: "hsl(20, 100%, 50%)",
+  ease: "steps(1)",
+}, 73.55);
+tl2.to("#circle2-3", {
+  duration: 0.5,
+  repeat: -1,
+  fill: "hsl(15, 100%, 50%)",
+  ease: "steps(1)",
+}, 77.6);
+tl2.to("#circle2-4", {
+  duration: 0.5,
+  repeat: -1,
+  fill: "hsl(10, 100%, 50%)",
+  ease: "steps(1)",
+}, 81.65);
+tl2.to("#circle2-5", {
+  duration: 0.5,
+  repeat: -1,
+  fill: "hsl(5, 100%, 50%)",
+  ease: "steps(1)",
+}, 85.7);
+tl2.to("#circle2-6", {
+  duration: 0.5,
+  repeat: -1,
+  fill: "hsl(0, 100%, 50%)",
+  ease: "steps(1)",
+}, 89.75);
+tl2.to("#circle2-7", {
+  duration: 0.5,
+  repeat: -1,
+  fill: "hsl(355, 100%, 50%)",
+  ease: "steps(1)",
+}, 89.8);
+tl2.to("#circle2-8", {
+  duration: 0.5,
+  repeat: -1,
+  fill: "hsl(350, 100%, 50%)",
+  ease: "steps(1)",
+}, 89.85);
+tl2.to("#circle2-9", {
+  duration: 0.5,
+  repeat: -1,
+  fill: "hsl(345, 100%, 50%)",
+  ease: "steps(1)",
+}, 89.9);
+tl2.to("#circle2-10", {
+  duration: 0.5,
+  repeat: -1,
+  fill: "hsl(340, 100%, 50%)",
+  ease: "steps(1)",
+}, 89.95);
+
+const firstPause = 107;
+const firstPauseDuration = 93.5;
+tl2.to("#circle2-2", {
+  duration: firstPauseDuration,
+  fill: "hsl(20, 100%, 30%)",
+}, firstPause);
+tl2.to("#circle2-3", {
+  duration: firstPauseDuration,
+  fill: "hsl(15, 100%, 30%)",
+}, firstPause);
+tl2.to("#circle2-4", {
+  duration: firstPauseDuration,
+  fill: "hsl(10, 100%, 30%)",
+}, firstPause);
+tl2.to("#circle2-5", {
+  duration: firstPauseDuration,
+  fill: "hsl(5, 100%, 30%)",
+}, firstPause);
+tl2.to("#circle2-6", {
+  duration: firstPauseDuration,
+  fill: "hsl(0, 100%, 30%)",
+}, firstPause);
+tl2.to("#circle2-7", {
+  duration: firstPauseDuration,
+  fill: "hsl(355, 100%, 30%)",
+}, firstPause);
+tl2.to("#circle2-8", {
+  duration: firstPauseDuration,
+  fill: "hsl(350, 100%, 30%)",
+}, firstPause);
+tl2.to("#circle2-9", {
+  duration: firstPauseDuration,
+  fill: "hsl(345, 100%, 30%)",
+}, firstPause);
+tl2.to("#circle2-10", {
+  duration: firstPauseDuration,
+  fill: "hsl(340, 100%, 30%)",
+}, firstPause);
+tl2.to("#rect2-2", {
+  duration: 5,
+  opacity: 1,
+  ease: "power4.in",
+}, firstPause);
+tl2.to("#rect2-2", {
+  duration: 1.05,
+  ease: "power4.out",
+  rotation: 360,
+  repeat: -1,
+}, firstPause + 5.525);
+tl2.to(".rects2", {
+  stroke: "hsla(30, 100%, 50%, 0.3)",
+  duration: 20,
+  strokeWidth: 400,
+  ease: "steps(10)",
+}, firstPause + 75);
+tl2.to(".circles2", {
+  fill: "hsl(250, 100%, 10%)",
+  duration: 67,
+  stagger: 7.33,
+}, firstPause + 110);
+tl2.to(".rects2", {
+  duration: 0,
+  strokeWidth: 1,
+  ease: "none",
+}, firstPause + 110);
+tl2.pause();
+
+
+let tl1 = gsap.timeline();
+tl1.to("#rect3-1", {
+  duration: 20,
+  fill: "hsla(250, 100%, 60%, 0.8)",
+  yoyo: true,
+  ease: "none",
   repeat: -1,
 });
-tl1.to("#circle2-5", {
-  fill: "hsla(40, 100%, 50%, 1)",
-  duration: 0.53,
-  ease: "steps(1)",
+tl1.to("#rect3-2", {
+  duration: 23,
+  fill: "hsla(240, 100%, 60%, 0.8)",
+  yoyo: true,
+  ease: "none",
   repeat: -1,
-}, 10)
-tl1.pause();
-
-let tl2 = gsap.timeline();
-
-let tl3 = gsap.timeline();
+});
+tl1.to("#rect3-3", {
+  duration: 27,
+  fill: "hsla(230, 100%, 60%, 0.8)",
+  yoyo: true,
+  ease: "none",
+  repeat: -1,
+});
+tl1.to("#rect3-4", {
+  duration: 30,
+  fill: "hsl(220, 100%, 60%)",
+  yoyo: true,
+  ease: "none",
+  repeat: -1,
+});
 
 let tl4 = gsap.timeline({yoyo:true, repeat:1});
 tl4.to("#rect4-1", {

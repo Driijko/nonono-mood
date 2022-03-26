@@ -71,6 +71,11 @@ currentAnimationElement.style.display = "block";
 
 // AUDIO ELEMENT /////////////////////////////////////////////
 const audioPlayer = document.getElementById("audio-player");
+audioPlayer.addEventListener("ended", ()=> {
+  currentAnimation.restart();
+  currentAnimation.pause();
+  switchToPlay();
+});
 
 // TRACK NAME //////////////////////////////////////////////
 let trackNameElement = document.getElementById("track-name");

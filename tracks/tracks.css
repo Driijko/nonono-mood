@@ -306,7 +306,7 @@ h2 {
   }
 
   /* TRACK ANIMATIONS -------------------------------------------- */
-  #track-animation1 {
+  #track-animation4 {
     filter: blur(calc(var(--w)/120));
   }
 }
