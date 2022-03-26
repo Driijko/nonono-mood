@@ -193,29 +193,29 @@ tl2.to(".rects2", {
 tl2.pause();
 
 
-let tl1 = gsap.timeline();
-tl1.to("#rect3-1", {
+let tl3 = gsap.timeline();
+tl3.to("#rect3-1", {
   duration: 20,
   fill: "hsla(250, 100%, 60%, 0.8)",
   yoyo: true,
   ease: "none",
   repeat: -1,
 });
-tl1.to("#rect3-2", {
+tl3.to("#rect3-2", {
   duration: 23,
   fill: "hsla(240, 100%, 60%, 0.8)",
   yoyo: true,
   ease: "none",
   repeat: -1,
 });
-tl1.to("#rect3-3", {
+tl3.to("#rect3-3", {
   duration: 27,
   fill: "hsla(230, 100%, 60%, 0.8)",
   yoyo: true,
   ease: "none",
   repeat: -1,
 });
-tl1.to("#rect3-4", {
+tl3.to("#rect3-4", {
   duration: 30,
   fill: "hsl(220, 100%, 60%)",
   yoyo: true,
@@ -308,4 +308,26 @@ tl4.to("#rect4-4", {
 },"tlp3");
 tl4.pause();
 
-let tl5 = gsap.timeline();
+let tl1 = gsap.timeline({delay: 6.7});
+tl1.to(".lines5", {
+  duration: 0.1,
+  stroke: "hsla(0, 100%, 50%, 1)",
+})
+tl1.to(".hlines5", {
+  duration: 4.2,
+  stroke: "hsla(0, 100%, 50%, 0.1)",
+  strokeWidth: 300,
+  yoyo: true,
+  repeat: -1,
+  ease: "power4.out",
+}, 8.6);
+tl1.to(".vlines5", {
+  stroke: "hsla(0, 100%, 0%, 1)",
+  strokeWidth: 50,
+  duration: 4.2,
+  yoyo: true,
+  repeat: -1,
+  ease: "power4.out",
+}, 12.8);
+
+tl1.pause();
