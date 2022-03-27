@@ -92,17 +92,18 @@
 @media only screen and (orientation: landscape) {
   /* BACKGROUNDS //////////////////////////// */
   #background4 {
-    transform: scale(110%, 30%) translate(0%, -110%);
+    transform: scale(110%, 73%) translate(0%, -27%);
   }
   /* HEADERS //////////////////////////////////// */
   #web-design1 h2 {
-    left: 27%;
+    left: 35%;
+    top: 45%;
   }
 
   /* PAGE-LINKS //////////////////////////////////// */
   #web-design1 .header-row-link-container {
-    left: 65%;
-    top: 61%;
+    left: 46.5%;
+    top: 65%;
   }
 
   /* DREEKO PROFILE ////////////////////////////////////// */

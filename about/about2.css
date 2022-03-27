@@ -1,9 +1,17 @@
+#header {
+  display: none;
+}
 /* GENERAL /////////////////////////////////////////// */
 .vp {
   background-color: black;
 }
 .ur {
   background-color: hsl(250, 100%, 5%);
+}
+
+/* BACKGROUNDS ////////////////////////////////////// */
+#background2 {
+  /* transform: translateX(-1%); */
 }
 
 /* PAGE-LINKS ////////////////////////////////////// */
@@ -37,8 +45,8 @@
 
 .header-row-link-container {
   position: absolute;
-  width: 13%;
-  border: calc(var(--w)/100) solid hsl(250, 100%, 60%);
+  width: 9%;
+  border: calc(var(--w)/200) solid hsl(250, 100%, 60%);
 }
 
 .header-row-link-container path, .header-row-link-container rect {
@@ -56,8 +64,8 @@
 }
 
 #about-album1 .header-row-link-container {
-  left: 43.5%;
-  top: 45%;
+  left: 45.5%;
+  top: 47%;
 }
 
 /* HEADERS ////////////////////////////////////////// */
@@ -72,7 +80,7 @@ h2 {
 
 #about-album1 h2 {
   left: 35%;
-  top: 26%;
+  top: 29%;
 }
 
 /* PARAGRAPHS ////////////////////////////////////// */
@@ -120,6 +128,10 @@ p {
   /* BACKGROUNDS --------------------------------------- */
   #background2 path {
     transform: scale(40%) translate(0%, -1%);
+  }
+
+  path {
+    stroke-width: 0;
   }
 
   /* HEADERS ------------------------------------------------ */
