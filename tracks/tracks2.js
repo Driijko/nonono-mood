@@ -309,6 +309,7 @@ tl4.to("#rect4-4", {
 tl4.pause();
 
 let tl1 = gsap.timeline({delay: 6.7});
+tl1.set(".rects5", {transformOrigin: "50% 50%",});
 tl1.to(".lines5", {
   duration: 0.1,
   stroke: "hsla(0, 100%, 50%, 1)",
@@ -322,12 +323,64 @@ tl1.to(".hlines5", {
   ease: "power4.out",
 }, 8.6);
 tl1.to(".vlines5", {
-  stroke: "hsla(0, 100%, 0%, 1)",
-  strokeWidth: 50,
+  stroke: "hsla(0, 100%, 0%, 0.9)",
+  strokeWidth: 75,
   duration: 4.2,
   yoyo: true,
   repeat: -1,
   ease: "power4.out",
 }, 12.8);
+
+tl1.to(".rects5", {
+  opacity: 1,
+  delay: 18,
+  duration: 20,
+  ease: "power4.in",
+  stagger: 10,
+}, 0);
+tl1.to(["#rect5-1", "#rect5-3"], {
+  rotation: 10000,
+  duration: 300,
+  ease: "none",
+}, 0);
+tl1.to("#rect5-2", {
+  rotation: -10000,
+  duration: 300,
+  ease: "none",
+}, 0);
+tl1.to(".rects5", {
+  strokeWidth: 200,
+  stroke: "hsla(0, 100%, 50%, 0.8)",
+  duration: 20,
+  ease: "none",
+  repeat: -1,
+  yoyo: true,
+  stagger: 10,
+}, 0);
+tl1.to(".rects5", {
+  strokeWidth: 200,
+  stroke: "hsla(330, 100%, 40%, 0.5)",
+  fill: "black",
+  duration: 20,
+  ease: "none",
+}, 178);
+tl1.to(".rects5", {
+  strokeWidth: 1500,
+  stroke: "hsla(0, 100%, 40%, 0.1)",
+  fill: "red",
+  duration: 110,
+  ease: "none",
+}, 198);
+tl1.to("#test", {
+  duration: 0,
+  fill: "white",
+}, 178);
+tl1.to("#filter-effect5-1", {
+  attr: {
+    scale: 150,
+  },
+  duration: 150,
+  ease: "none",
+}, 178);
 
 tl1.pause();
