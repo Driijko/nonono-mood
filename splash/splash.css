@@ -89,6 +89,7 @@ img {
   from {filter: blur(calc(var(--w)/50));}
   to {filter: blur(0);}
 }
+@keyframes fade-in {from{opacity:0;}to{opacity:1;}}
 
 a {
   border: calc(var(--w)/300) solid hsl(250, 100%, 20%);
@@ -102,7 +103,8 @@ a {
   color: hsl(250, 100%, 60%);
   font-size: calc(var(--w)/15);
   font-family: "Hubballi", sans-serif;
-  animation: blur-in 17s ease-out;
+  opacity: 0;
+  animation: blur-in 5s 8s ease-out, fade-in 3s 8s ease-out forwards;
   transition-property: color, box-shadow, border-color, border-width, background-color;
   transition-duration: 2s;
 }
