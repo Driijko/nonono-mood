@@ -18,8 +18,8 @@
 
 /* PAGE-LINKS //////////////////////////////////////// */
 #web-design1 .header-row-link-container {
-  left: 44%;
-  top: 72%;
+  left: 46%;
+  top: 71%;
 }
 
 /* DREEKO PROFILE //////////////////////////////////////// */
@@ -92,18 +92,21 @@
 @media only screen and (orientation: landscape) {
   /* BACKGROUNDS //////////////////////////// */
   #background4 {
-    transform: scale(110%, 73%) translate(0%, -27%);
+    transform: scale(110%, 65%) translate(0%, -35.5%);
   }
   /* HEADERS //////////////////////////////////// */
   #web-design1 h2 {
-    left: 35%;
-    top: 45%;
+    left: 36%;
+    top: 34%;
   }
 
   /* PAGE-LINKS //////////////////////////////////// */
+  #header, #row1, #row2 {
+    display: none;
+  }
   #web-design1 .header-row-link-container {
-    left: 46.5%;
-    top: 65%;
+    left: 47.5%;
+    top: 60%;
   }
 
   /* DREEKO PROFILE ////////////////////////////////////// */

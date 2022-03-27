@@ -1,17 +1,9 @@
-#header {
-  display: none;
-}
 /* GENERAL /////////////////////////////////////////// */
 .vp {
   background-color: black;
 }
 .ur {
   background-color: hsl(250, 100%, 5%);
-}
-
-/* BACKGROUNDS ////////////////////////////////////// */
-#background2 {
-  /* transform: translateX(-1%); */
 }
 
 /* PAGE-LINKS ////////////////////////////////////// */
@@ -127,12 +119,9 @@ p {
 @media only screen and (orientation: landscape) {
   /* BACKGROUNDS --------------------------------------- */
   #background2 path {
-    transform: scale(40%) translate(0%, -1%);
+    transform: scale(120%, 70%) translate(-8.5%, -30%);
   }
 
-  path {
-    stroke-width: 0;
-  }
 
   /* HEADERS ------------------------------------------------ */
   h2 {
@@ -140,19 +129,21 @@ p {
   }
 
   #about-album1 h2 {
-    left: 40%;
+    left: 24%;
+    top: 20%;
     word-spacing: calc(var(--w)/100);
     letter-spacing: calc(var(--w)/200);
   }
 
   /* PAGE-LINKS ----------------------------------------------- */
   .header-row-link-container {
-    width: 7%;
-    border: hsl(250, 100%, 30%) solid calc(var(--w)/200);
+    width: 5%;
+    border: hsl(250, 100%, 30%) solid calc(var(--w)/300);
   }
 
   #about-album1 .header-row-link-container {
-    left: 60%;
+    left: 47.5%;
+    top: 35%;
   }
 
   /* PARAGRAPHS -------------------------------------------- */
