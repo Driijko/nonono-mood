@@ -1,10 +1,14 @@
+#header, #row1, #row2, #web-design1, #web-design2, #web-design3 {
+  display: none;
+}
+
 /* HEADERS ////////////////////////////////////// */
 #web-design1 h2 {
   top: 62%;
   left: 24%;
 }
 
-#web-design3 h3 {
+#row3 h3 {
   padding-top: 2%;
   color: hsl(250, 100%, 50%);
   font-size: calc(var(--w)/5);
@@ -12,7 +16,7 @@
   text-align: center;
 }
 
-#web-design3 p {
+#web-design3 p, #web-design4 p {
   padding-top: 8%;
 }
 
@@ -87,7 +91,19 @@
   font-family: "Ubuntu", sans-serif;
 }
 
-
+/* IMAGE LIST /////////////////////////////////////// */
+#web-design4 ul {
+  /* border: 1px solid red; */
+  height: 45%;
+  color: hsl(250, 100%, 80%);
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: calc(var(--w)/25);
+  padding-left: 10%;
+  line-height: 1.5;
+}
 
 @media only screen and (orientation: landscape) {
   /* BACKGROUNDS //////////////////////////// */
@@ -101,9 +117,6 @@
   }
 
   /* PAGE-LINKS //////////////////////////////////// */
-  #header, #row1, #row2 {
-    display: none;
-  }
   #web-design1 .header-row-link-container {
     left: 47.5%;
     top: 60%;

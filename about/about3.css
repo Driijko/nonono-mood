@@ -19,6 +19,10 @@
   font-family: "Bungee Outline", sans-serif;
 }
 
+#dree-name {
+  height: 8%;
+}
+
 .band-member-role {
   color: hsl(300, 100%, 30%);
   height: 8%;
@@ -28,6 +32,11 @@
   align-items: center;
   font-style: italic;
   font-family: "Ubuntu", sans-serif;
+}
+
+#dree-role {
+  height: 10%;
+  padding-bottom: 5%;
 }
 
 /* PICTURES //////////////////////////////////////////// */
