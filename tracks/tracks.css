@@ -109,10 +109,6 @@ body {
   /* animation: blur-in 5s ease-out forwards; */
 }
 
-.ur {
-  /* background-color: black; */
-}
-
 /* GENERAL INTERACTIONS //////////////////////////////////// */
 input {
   width: 0;
@@ -123,9 +119,6 @@ label, a, button {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Iceland";
-  font-family: "East Sea Dokdo";
-  font-family: "Sirin Stencil";
   border: none;
   transition-property: box-shadow, transform, background-color, border, color;
   transition-duration: 1s;
@@ -180,12 +173,17 @@ menu label, menu a {
   border: calc(var(--w)/200) hsl(250, 100%, 10%) solid;
 }
 
+.track-button {
+  font-family: "Sirin Stencil", cursive;
+}
+
 #about-button-container {
   width: 15%;
 }
 
 #about-button-container a {
   font-size: calc(var(--w)/25);
+  font-family: "Montserrat", sans-serif;
 }
 
 /* TRACK NAME ------------------------------------------------ */
@@ -193,23 +191,21 @@ h2 {
   color: hsl(250, 100%, 70%);
   position: absolute;
   width: 100%;
-  top: 85%;
+  top: 84%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: calc(var(--w)/15);
-  font-family: "Iceland";
+  font-size: calc(var(--w)/20);
+  font-family: "Montserrat", sans-serif;
   letter-spacing: calc(var(--w)/100);
-  /* font-family: "East Sea Dokdo";
-  font-family: "Sirin Stencil"; */
 }
 
 /* PAUSE-PLAY BUTTON --------------------------------------------- */
 #pause-play-button {
   position: absolute;
   left: 45%;
-  top: 79%;
+  top: 77%;
   width: 10%;
   height: 5%;
   border-width: 0;

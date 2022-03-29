@@ -1,21 +1,21 @@
 // TRACK ANIMATIONS ///////////////////////////////////////////////////
 // Hunger animation -------------------------------------------------
-// let tl1 = gsap.timeline({yoyo: true, repeat: 10, repeatDelay: 1,});
-// tl1.to(".triangle", {
-//   duration: 3.5,
-//   fill: "hsla(250, 100%, 50%, 0.1)",
-//   stroke: "hsla(250, 100%, 0%, 0.7)",
-//   strokeWidth: 5,
-//   stagger: 0.5,
-// })
-// .to(".triangle", {
-//   duration: 3.5,
-//   fill: "hsla(250, 100%, 20%, 0.1)",
-//   stagger: 0.5,
-//   stroke: "hsla(250, 100%, 10%, 0.5)",
-//   strokeWidth: 1,
-// });
-// tl1.pause();
+let tl1 = gsap.timeline({yoyo: true, repeat: 10, repeatDelay: 1,});
+tl1.to(".triangle", {
+  duration: 3.5,
+  fill: "hsla(250, 100%, 50%, 0.1)",
+  stroke: "hsla(250, 100%, 0%, 0.7)",
+  strokeWidth: 5,
+  stagger: 0.5,
+})
+.to(".triangle", {
+  duration: 3.5,
+  fill: "hsla(250, 100%, 20%, 0.1)",
+  stagger: 0.5,
+  stroke: "hsla(250, 100%, 10%, 0.5)",
+  strokeWidth: 1,
+});
+tl1.pause();
 
 // Can animation ------------------------------------------------
 let tl2 = gsap.timeline({repeat: -1, delay: 0.28});
@@ -192,7 +192,7 @@ tl2.to(".rects2", {
 }, firstPause + 110);
 tl2.pause();
 
-
+// Empty Mirror animation ------------------------------------
 let tl3 = gsap.timeline();
 tl3.to("#rect3-1", {
   duration: 20,
@@ -223,6 +223,7 @@ tl3.to("#rect3-4", {
   repeat: -1,
 });
 
+// Black Rainbow animation ---------------------------------------
 let tl4 = gsap.timeline({yoyo:true, repeat:1});
 tl4.to("#rect4-1", {
   duration: 60,
@@ -308,13 +309,14 @@ tl4.to("#rect4-4", {
 },"tlp3");
 tl4.pause();
 
-let tl1 = gsap.timeline({delay: 6.7});
-tl1.set(".rects5", {transformOrigin: "50% 50%",});
-tl1.to(".lines5", {
+// Police Truck animation ---------------------------------
+let tl5 = gsap.timeline({delay: 6.7});
+tl5.set(".rects5", {transformOrigin: "50% 50%",});
+tl5.to(".lines5", {
   duration: 0.1,
   stroke: "hsla(0, 100%, 50%, 1)",
-})
-tl1.to(".hlines5", {
+},0)
+tl5.to(".hlines5", {
   duration: 4.2,
   stroke: "hsla(0, 100%, 50%, 0.1)",
   strokeWidth: 300,
@@ -322,7 +324,7 @@ tl1.to(".hlines5", {
   repeat: -1,
   ease: "power4.out",
 }, 8.6);
-tl1.to(".vlines5", {
+tl5.to(".vlines5", {
   stroke: "hsla(0, 100%, 0%, 0.9)",
   strokeWidth: 75,
   duration: 4.2,
@@ -331,24 +333,24 @@ tl1.to(".vlines5", {
   ease: "power4.out",
 }, 12.8);
 
-tl1.to(".rects5", {
+tl5.to(".rects5", {
   opacity: 1,
   delay: 18,
   duration: 20,
   ease: "power4.in",
   stagger: 10,
 }, 0);
-tl1.to(["#rect5-1", "#rect5-3"], {
+tl5.to(["#rect5-1", "#rect5-3"], {
   rotation: 10000,
   duration: 300,
   ease: "none",
 }, 0);
-tl1.to("#rect5-2", {
+tl5.to("#rect5-2", {
   rotation: -10000,
   duration: 300,
   ease: "none",
 }, 0);
-tl1.to(".rects5", {
+tl5.to(".rects5", {
   strokeWidth: 200,
   stroke: "hsla(0, 100%, 50%, 0.8)",
   duration: 20,
@@ -357,25 +359,25 @@ tl1.to(".rects5", {
   yoyo: true,
   stagger: 10,
 }, 0);
-tl1.to(".rects5", {
+tl5.to(".rects5", {
   strokeWidth: 200,
   stroke: "hsla(330, 100%, 40%, 0.5)",
   fill: "black",
   duration: 20,
   ease: "none",
 }, 178);
-tl1.to(".rects5", {
+tl5.to(".rects5", {
   strokeWidth: 1500,
   stroke: "hsla(0, 100%, 40%, 0.1)",
   fill: "red",
   duration: 110,
   ease: "none",
 }, 198);
-tl1.to("#test", {
+tl5.to("#test", {
   duration: 0,
   fill: "white",
 }, 178);
-tl1.to("#filter-effect5-1", {
+tl5.to("#filter-effect5-1", {
   attr: {
     scale: 150,
   },
@@ -383,4 +385,4 @@ tl1.to("#filter-effect5-1", {
   ease: "none",
 }, 178);
 
-tl1.pause();
+tl5.pause();

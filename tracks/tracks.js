@@ -72,7 +72,7 @@ currentAnimationElement.style.display = "block";
 // AUDIO ELEMENT /////////////////////////////////////////////
 const audioPlayer = document.getElementById("audio-player");
 audioPlayer.addEventListener("ended", ()=> {
-  currentAnimation.restart();
+  currentAnimation.restart(true);
   currentAnimation.pause();
   switchToPlay();
 });
@@ -148,7 +148,7 @@ document.getElementById("pause-play-button").addEventListener("click", e => {
 for (let trackButton of document.getElementsByClassName("track-button")) {
   trackButton.addEventListener("click", e => {
     currentAnimationElement.style.display = "none";
-    currentAnimation.restart();
+    currentAnimation.restart(true);
     currentAnimation.pause();
     if (e.target.id === "hunger") {
       currentAnimationElement = document.getElementById("track-animation1");
