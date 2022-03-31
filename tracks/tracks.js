@@ -65,8 +65,8 @@ window.addEventListener("resize", ()=> {
 });
 
 // TRACK ANIMATIONS /////////////////////////////////////////
-let currentAnimation = tl1;
-let currentAnimationElement = document.getElementById("track-animation1");
+let currentAnimation = tl4;
+let currentAnimationElement = document.getElementById("track-animation4");
 currentAnimationElement.style.display = "block";
 
 // AUDIO ELEMENT /////////////////////////////////////////////

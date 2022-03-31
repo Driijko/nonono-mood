@@ -1,20 +1,113 @@
 // TRACK ANIMATIONS ///////////////////////////////////////////////////
 // Hunger animation -------------------------------------------------
-let tl1 = gsap.timeline({yoyo: true, repeat: 10, repeatDelay: 1,});
+// delay : 12
+let tl1 = gsap.timeline({yoyo: true, repeat: 10, repeatDelay: 1, delay: 12});
 tl1.to(".triangle", {
   duration: 3.5,
-  fill: "hsla(250, 100%, 50%, 0.1)",
-  stroke: "hsla(250, 100%, 0%, 0.7)",
+  opacity: 1,
+  stagger: 0.5,
+  repeat: -1,
+  yoyo: true,
+  repeatDelay: 2,
+},0);
+tl1.to(".triangle", {
+  duration: 4,
   strokeWidth: 5,
-  stagger: 0.5,
-})
-.to(".triangle", {
-  duration: 3.5,
-  fill: "hsla(250, 100%, 20%, 0.1)",
-  stagger: 0.5,
-  stroke: "hsla(250, 100%, 10%, 0.5)",
-  strokeWidth: 1,
-});
+  stroke: "hsla(300, 100%, 50%, 0.5)",
+  repeat: -1,
+  yoyo: true,
+  repeatDelay: 1.3,
+  stagger: 0.7,
+}, 0);
+tl1.to([".paths1", ".ellipses1"], {
+  duration: 10, //10
+  ease: "power2.in",
+  opacity: 1,
+}, 35); //35
+tl1.to([".paths1", ".ellipses1"], {
+  duration: 30,
+  fill: "hsla(300, 100%, 50%, 0.2)",
+  ease: "power2.in",
+  yoyo: true,
+  repeat: -1,
+}, 45); //45
+const duration1 = 60; // 60
+const startTime1 = 60; //60
+const repeatDelay1 = 56;
+tl1.to("#path1-1", {
+  duration: duration1,
+  attr: {
+    d: "M 500,190 Q -400,0 500,1200 Z",
+  },
+  ease: "none",
+  yoyo: true,
+  repeatDelay: repeatDelay1,
+  repeat: 1,
+}, startTime1);
+tl1.to("#path1-2", {
+  duration: duration1,
+  attr: {
+    d: "M 500,190 Q 1400,0 500,1200 Z",
+  },
+  ease: "none",
+  yoyo: true,
+  repeatDelay: repeatDelay1,
+  repeat: 1,
+}, startTime1);
+tl1.to("#path1-3", {
+  duration: duration1,
+  attr: {
+    d: "M 500,510 Q 200,500 500,1200 Z",
+  },
+  ease: "none",
+  yoyo: true,
+  repeatDelay: repeatDelay1,
+  repeat: 1,
+}, startTime1);
+tl1.to("#path1-4", {
+  duration: duration1,
+  attr: {
+    d: "M 500,510 Q 800,500 500,1200 Z",
+  },
+  ease: "none",
+  yoyo: true,
+  repeatDelay: repeatDelay1,
+  repeat: 1,
+}, startTime1);
+tl1.to("#path1-5", {
+  duration: duration1,
+  attr: {
+    d: "M 500,1700 Q 0,900 500,190 Z",
+  },
+  ease: "none",
+  yoyo: true,
+  repeatDelay: repeatDelay1,
+  repeat: 1,
+}, startTime1);
+tl1.to("#path1-6", {
+  duration: duration1,
+  attr: {
+    d: "M 500,1700 Q 1000,900 500,190 Z",
+  },
+  ease: "none",
+  yoyo: true,
+  repeatDelay: repeatDelay1,
+  repeat: 1,
+}, startTime1);
+tl1.to([".paths1", ".ellipses1"], {
+  duration: 1.35,
+  stroke: "hsl(300, 100%, 50%)",
+  strokeWidth: 10,
+  ease: "power1.out",
+  yoyo: true,
+  repeat: 18,
+}, 199.5);
+tl1.to(".ellipses1", {
+  duration: 45,
+  strokeWidth: 700,
+  stroke: "hsla(250, 100%, 80%, 0.1)",
+  ease: "none",
+},245);
 tl1.pause();
 
 // Can animation ------------------------------------------------
@@ -193,35 +286,38 @@ tl2.to(".rects2", {
 tl2.pause();
 
 // Empty Mirror animation ------------------------------------
-let tl3 = gsap.timeline();
+let tl3 = gsap.timeline({delay: 14});
+tl3.set("#rect3-1", {transformOrigin: "50% 50%", svgOrigin: "50% 50%"});
 tl3.to("#rect3-1", {
-  duration: 20,
+  duration: 23,
   fill: "hsla(250, 100%, 60%, 0.8)",
   yoyo: true,
   ease: "none",
   repeat: -1,
-});
+}, 0);
 tl3.to("#rect3-2", {
-  duration: 23,
+  duration: 70,
   fill: "hsla(240, 100%, 60%, 0.8)",
   yoyo: true,
   ease: "none",
   repeat: -1,
-});
+}, 0);
 tl3.to("#rect3-3", {
-  duration: 27,
-  fill: "hsla(230, 100%, 60%, 0.8)",
+  duration: 34,
+  fill: "hsla(230, 100%, 40%, 0.8)",
   yoyo: true,
   ease: "none",
   repeat: -1,
-});
+}, 0);
 tl3.to("#rect3-4", {
-  duration: 30,
-  fill: "hsl(220, 100%, 60%)",
+  duration: 60,
+  fill: "hsl(220, 100%, 10%)",
   yoyo: true,
   ease: "none",
   repeat: -1,
-});
+}, 0);
+tl3.pause();
+
 
 // Black Rainbow animation ---------------------------------------
 let tl4 = gsap.timeline({yoyo:true, repeat:1});
@@ -373,10 +469,6 @@ tl5.to(".rects5", {
   duration: 110,
   ease: "none",
 }, 198);
-tl5.to("#test", {
-  duration: 0,
-  fill: "white",
-}, 178);
 tl5.to("#filter-effect5-1", {
   attr: {
     scale: 150,

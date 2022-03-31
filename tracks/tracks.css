@@ -184,6 +184,7 @@ menu label, menu a {
 #about-button-container a {
   font-size: calc(var(--w)/25);
   font-family: "Montserrat", sans-serif;
+  height: 60%;
 }
 
 /* TRACK NAME ------------------------------------------------ */
@@ -255,10 +256,6 @@ h2 {
     border-width: calc(var(--w)/200);
   }
 
-  .ur {
-    border: 4px solid red;
-  }
-
   /* BUTTON MENU ///////////////////////////////////////////// */
   menu {
     width: 30%;
@@ -271,9 +268,13 @@ h2 {
   }
 
   menu label, menu a {
+    border-width: calc(var(--w)/1000);
+  }
+
+  menu label {
+    width: 70%;
     height: 100%;
     font-size: calc(var(--w)/40);
-    border-width: calc(var(--w)/1000);
   }
 
   #about-button-container {
@@ -302,26 +303,30 @@ h2 {
   /* TRACK NAME ----------------------------------------- */
   h2 {
     font-size: calc(var(--w)/40);
-    /* font-size: calc(var(--w)/21); */
-    right: 7%;
+    left: 32%;
     width: 60%;
     top: 90%;
     text-align: right;
-    /* border: 4px solid green; */
     display: block;
     letter-spacing: calc(var(--w)/500);
+    border: none;
+    background-color: transparent;
   }
 
   /* PAUSE-PLAY-BUTTON ---------------------------------------- */
   #pause-play-button {
-    width: 5%;
-    height: 8%;
+    width: 4%;
+    height: 6.5%;
     left: 94%;
-    top: 88%;
+    top: 89%;
   }
 
   /* TRACK ANIMATIONS -------------------------------------------- */
+  #track-animation3 {
+    top: 7%;
+    /* transform: scale(112%); */
+  }
   #track-animation4 {
-    filter: blur(calc(var(--w)/120));
+    filter: blur(calc(var(--w)/100));
   }
 }
