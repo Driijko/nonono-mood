@@ -321,88 +321,125 @@ tl3.pause();
 
 // Black Rainbow animation ---------------------------------------
 let tl4 = gsap.timeline({yoyo:true, repeat:1});
+gsap.set(".rects4", {transformOrigin: "50% 50%"});
+const duration4 = 60;
 tl4.to("#rect4-1", {
-  duration: 60,
-  fill: "hsl(250, 100%, 50%)",
-  ease: "power1.in",
-},"tlp1");
+  duration: duration4,
+  ease: "none",
+  scaleX: 0.8,
+}, 0);
+tl4.to("#rect4-2", {
+  duration: duration4,
+  fill: "hsla(250, 100%, 50%, 1)",
+  ease: "none",
+  scaleX: 1.1,
+  scaleY: 0.9,
+}, 0);
+tl4.to("#rect4-3", {
+  fill: "hsla(250, 100%, 20%, 1)",
+  duration: duration4,
+  translateY: "60%",
+  ease: "none",
+}, 0);
+tl4.to("#rect4-4", {
+  scaleY: 3,
+  fill: "hsla(250, 100%, 20%, 0.5)",
+  duration: duration4,
+  translateY: "-50%",
+  ease: "none",
+}, 0);
+
 tl4.to("#rect4-1", {
-  duration: 60, 
-  fill: "hsl(50, 100%, 70%)",
-  ease: "power1.in",
-},"tlp2");
+  duration: duration4,
+  ease: "none",
+  fill: "hsl(0, 100%, 70%)",
+}, duration4);
+tl4.to("#rect4-2", {
+  duration: duration4,
+  fill: "hsla(50, 100%, 50%, 0.5)",
+  ease: "none",
+}, duration4);
+tl4.to("#rect4-3", {
+  fill: "hsla(50, 100%, 80%, 0.3)",
+  duration: duration4,
+  translateY: "75%",
+  translateX: "-40%",
+  scaleY: 2.8,
+  scaleX: 1.8,
+  ease: "none",
+}, duration4);
+tl4.to("#rect4-4", {
+  scaleY: 5,
+  fill: "hsla(50, 100%, 50%, 0.5)",
+  duration: duration4,
+  translateY: "-100%",
+  translateX: "10%",
+  ease: "none",
+}, duration4);
+
 tl4.to("#rect4-1", {
-  duration: 60, 
-  fill: "hsl(0, 100%, 80%)",
-  ease: "power1.in",
-},"tlp3");
+  duration: duration4,
+  ease: "none",
+  fill: "hsl(0, 100%, 50%)",
+  scaleX: 1.1
+}, duration4 * 2);
+tl4.to("#rect4-2", {
+  duration: duration4,
+  scaleX: 1.6,
+  scaleY: 0.7,
+  fill: "hsla(20, 100%, 50%, 0.5)",
+  ease: "none",
+}, duration4 * 2);
+tl4.to("#rect4-3", {
+  fill: "hsla(0, 100%, 50%, 0.8)",
+  duration: duration4,
+  translateY: "75%",
+  translateX: "0%",
+  scaleY: 1.5,
+  scaleX: 3.8,
+  ease: "none",
+}, duration4 * 2);
+tl4.to("#rect4-4", {
+  scaleY: 2,
+  scaleX: 2.1,
+  fill: "hsla(20, 100%, 50%, 0.4)",
+  duration: duration4,
+  translateY: "-100%",
+  translateX: "0%",
+  ease: "none",
+}, duration4 * 2);
+
 tl4.to("#rect4-1", {
-  duration: 60, 
-  fill: "hsl(250, 100%, 5%)",
-  ease: "power1.in",
-},"tlp4");
+  duration: duration4,
+  ease: "none",
+  fill: "hsl(0, 100%, 0%)",
+  scaleX: 1.1
+}, duration4 * 3);
 tl4.to("#rect4-2", {
-  duration: 60,
-  fill: "hsla(10, 100%, 70%, 0.3)",
-  transform: "scale(155%) translate(-18%, 10%)",
-  ease: "power1.in",
-},"tlp1");
-tl4.to("#rect4-2", {
-  duration: 60,
-  fill: "hsla(50, 100%, 50%, 1)",
-  transform: "scale(150%, 300%) translate(-30%, -5%)",
-  ease: "power1.in",
-},"tlp2");
-tl4.to("#rect4-2", {
-  duration: 60,
-  fill: "hsla(0, 100%, 50%, 0.5)",
-  transform: "scale(280%) translate(-32%, -5%)",
-  ease: "power1.in",
-},"tlp3");
-tl4.to("#rect4-2", {
-  duration: 60,
-  fill: "hsla(0, 100%, 80%, 0.3)",
-  ease: "power1.in",
-},"tlp4");
+  duration: duration4,
+  scaleX: 1.6,
+  scaleY: 0.7,
+  fill: "hsla(0, 100%, 50%, 0.1)",
+  ease: "none",
+}, duration4 * 3);
 tl4.to("#rect4-3", {
-  duration: 60,
-  fill:"hsla(40, 100%, 60%, 0.3)",
-  ease: "power1.in",
-  transform: "scale(200%) translate(-25%, -35%)",
-},"tlp1");
-tl4.to("#rect4-3", {
-  duration: 60,
-  fill:"hsla(50, 100%, 80%, 0.8)",
-  ease: "power1.in",
-  transform: "scale(110%, 220%) translate(10%, -38%)",
-},"tlp2");
-tl4.to("#rect4-3", {
-  duration: 60,
-  fill:"hsla(50, 100%, 60%, 0.6)",
-  ease: "power1.in",
-  transform: "scale(220%, 50%) translate(-27%, 10%)",
-},"tlp3");
-tl4.to("#rect4-3", {
-  duration: 60,
-  fill:"hsla(0, 100%, 50%, 0.6)",
-  ease: "power1.in",
-},"tlp4");
+  fill: "hsla(0, 100%, 50%, 0.8)",
+  duration: duration4,
+  translateY: "75%",
+  translateX: "0%",
+  scaleY: 1.5,
+  scaleX: 3.8,
+  ease: "none",
+}, duration4 * 3);
 tl4.to("#rect4-4", {
-  duration: 60,
-  fill:"hsla(250, 100%, 50%, 0.5)",
-},"tlp1");
-tl4.to("#rect4-4", {
-  duration: 60,
-  fill:"hsla(50, 100%, 50%, 0.3)",
-},"tlp2");
-tl4.to("#rect4-4", {
-  duration: 60,
-  fill:"hsla(330, 100%, 50%, 0.3)",
-},"tlp3");
-tl4.to("#rect4-4", {
-  duration: 60,
-  fill:"hsla(250, 100%, 10%, 0)",
-},"tlp3");
+  scaleY: 1.5,
+  scaleX: 2.1,
+  fill: "hsla(20, 100%, 0%, 1)",
+  duration: duration4,
+  translateY: "-100%",
+  translateX: "0%",
+  ease: "none",
+}, duration4 * 3);
 tl4.pause();
 
 // Police Truck animation ---------------------------------
