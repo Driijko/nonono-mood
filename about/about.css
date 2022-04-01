@@ -141,10 +141,6 @@ i {
   0% {filter: blur(calc(var(--w)/10));}
   30% {filter: blur(0);}
 }
-/* @keyframes scale1 {
-  0% {transform: scale(250%);}
-  100% {transform: scale(100%);}
-} */
 @keyframes background-scale1 {
   0% {background-size: 300%;}
   100% {background-size: 95%;}
@@ -177,7 +173,17 @@ i {
   }
 }
 
-/* CONTENT ////////////////////////////// */
+/* CONTENT ////////////////////////////// ////////////////// */
+
+/* GENERAL ------------------------------------------------- */
+.vp {
+  background-color: black;
+}
+.ur {
+  background-color: hsl(250, 100%, 5%);
+}
+
+/* MAIN HEADER --------------------------------------------- */
 header {
   color: white;
   background-color: hsl(250, 100%, 5%) !important;
@@ -203,8 +209,6 @@ header nav ul {
 }
 
 header nav ul li {
-  /* border: 1px solid red; */
-
   height: 22%;
   display: flex;
   flex-direction: column;
@@ -246,6 +250,286 @@ header nav ul li a:hover, header nav ul li a:focus {
   transform: scale(120%);
 }
 
+/*  SECTION HEADERS ////////////////////////////////////////// */
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: calc(var(--w)/11);
+  text-align: center;
+  position: absolute;
+  color: hsl(250, 100%, 80%);
+}
+
+#about-album1 h2 {
+  left: 35%;
+  top: 29%;
+}
+
+#band-members1 h2 {
+  top: 20%;
+  left: 7%
+}
+
+#web-design1 h2 {
+  top: 62%;
+  left: 24%;
+}
+
+#row3 h3 {
+  padding-top: 2%;
+  color: hsl(250, 100%, 50%);
+  font-size: calc(var(--w)/5);
+  font-family: "Bungee Outline", sans-serif;
+  text-align: center;
+}
+
+/* PAGE-LINKS ////////////////////////////////////// */
+.page-links-vertical {
+  position: absolute;
+  bottom: 2%;
+  width: 90%;
+  left: 5%;
+  height: 3%;
+}
+
+.page-links-horizontal {
+  position: absolute;
+  bottom: 4%;
+  width: 100%;
+  height: 5%;
+}
+
+.page-link {
+  width: 10%;
+}
+
+.page-link path {
+  transition-property: stroke;
+  transition-duration: 1s;
+  transition-timing-function: ease-out; 
+}
+.page-link:hover path, .page-link:focus path {
+  stroke: magenta;
+}
+
+.header-row-link-container {
+  position: absolute;
+  width: 9%;
+  border: calc(var(--w)/200) solid hsl(250, 100%, 60%);
+}
+
+.header-row-link-container path, .header-row-link-container rect {
+  transition-property: fill;
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
+}
+
+.header-row-link-container a:hover path, .header-row-link-container a:focus path {
+  fill: magenta;
+}
+
+.header-row-link-container a:focus rect, .header-row-link-container a:hover rect {
+  fill: black;
+}
+
+#about-album1 .header-row-link-container {
+  left: 45.5%;
+  top: 47%;
+}
+
+#band-members1 .header-row-link-container {
+  top: 33%;
+  left: 24%;
+}
+
+#web-design1 .header-row-link-container {
+  left: 46%;
+  top: 71%;
+}
+
+/* PARAGRAPHS ////////////////////////////////////// */
+.paragraph-container {
+  height: 88%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+p {
+  color:hsl(250, 100%, 80%);
+  font-family: "Montserrat", sans-serif;
+  font-size: calc(var(--w)/20);
+  padding: 2% 5%;
+  line-height: 1.5;
+}
+
+#web-design3 p, #web-design4 p {
+  padding-top: 8%;
+}
+
+/* DREEKO PROFILE //////////////////////////////////////// */
+#dreeko-logo {
+  object-fit: contain;
+  width: 100%;
+  height: 20%;
+}
+
+#web-design2 .ur {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-bottom: 30%;
+}
+
+/* FONTS-LIST //////////////////////////////////////////////// */
+#fonts-list {
+  padding-top: 10%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: hsl(250, 100%, 80%);
+  font-size: calc(var(--w)/15);
+}
+
+#fonts-list li {
+  height: 17%;
+}
+
+#fonts-list a {
+  height: 100%;
+  text-align: center;
+  border-top:hsl(250, 100%, 50%) solid calc(var(--w)/200);
+}
+
+#fonts-list a:hover, #fonts-list a:focus {
+  background-color: hsl(250, 100%, 20%);
+  color: magenta;
+}
+
+.hubballi {
+  font-family: "Hubballi", cursive;
+  font-size: calc(var(--w)/11);
+}
+
+.quicksand {
+  font-family: "Quicksand", sans-serif;
+}
+
+.plaster {
+  font-family: "Plaster", cursive;
+}
+
+.bungee-outline {
+  font-family: "Bungee Outline", cursive;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.ubuntu {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.sirin-stencil {
+  font-family: "Sirin Stencil", cursive;
+}
+
+/* IMAGE LIST /////////////////////////////////////// */
+#web-design4 ul {
+  height: 45%;
+  color: hsl(250, 100%, 80%);
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: calc(var(--w)/25);
+  padding-left: 10%;
+  line-height: 1.5;
+}
+
+/* INLINE / EXTERNAL INLINE LINKS --------------------------------------- */
+.external-inline-link {
+  display: inline;
+  text-decoration: underline;
+  color: hsl(250, 100%, 70%);
+  font-weight: bold;
+}
+
+.external-inline-link:hover, .external-inline-link:focus {
+  color: magenta;
+}
+
+.band-name {
+  color: hsl(300, 100%, 50%);
+  font-weight: bold;
+}
+
+.album-name {
+  font-family: "Ubuntu";
+  color: hsl(240, 100%, 50%);
+  font-weight: bold;
+  font-style: italic;
+  font-size: calc(var(--w)/10);
+  text-align: center;
+}
+
+/* BAND MEMBER PROFILES -------------------------------------- */
+.band-member-name {
+  color: hsl(250, 100%, 80%);
+  height: 10%;
+  font-size: calc(var(--w)/11);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bungee Outline", sans-serif;
+}
+
+#dree-name {
+  height: 8%;
+}
+
+.band-member-role {
+  color: hsl(300, 100%, 30%);
+  height: 8%;
+  font-size: calc(var(--w)/15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#dree-role {
+  height: 10%;
+  padding-bottom: 5%;
+}
+
+.band-member-pic {
+  object-fit: contain;
+  width: 100%;
+  height: 50%;
+  filter: grayscale(100%) sepia(100%) hue-rotate(250deg) saturate(500%) brightness(0.7); 
+}
+
+.band-member-write-up {
+  font-size: calc(var(--w)/23);
+  height: 17%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.band-member-write-up p {
+  font-size: calc(var(--w)/23);
+}
+
+.track-name {
+  color: hsl(250, 100%, 60%);
+}
+
+/* LANDSCAPE ////////////////////////////////////////// */
 @media only screen and (orientation: landscape) {
   .desktop {
     display: initial;
@@ -255,6 +539,7 @@ header nav ul li a:hover, header nav ul li a:focus {
     display: none;
   }
 
+  /* BACKGROUNDS --------------------------------------- */
   #background1 {
     background-size: 50%;
     background-position: 30% 50%;
@@ -262,6 +547,19 @@ header nav ul li a:hover, header nav ul li a:focus {
       blur1 18s linear forwards;
   }
 
+  #background2 path {
+    transform: scale(120%, 70%) translate(-8.5%, -30%);
+  }
+
+  #background3 {
+    transform: scale(40%) translate(80%, -79%);
+  }
+
+  #background4 {
+    transform: scale(110%, 65%) translate(0%, -35.5%);
+  }
+
+  /* MAIN HEADER ------------------------------------ */
   header .ur {
     animation: scale-down1 12s ease-out forwards;
   }
@@ -293,5 +591,150 @@ header nav ul li a:hover, header nav ul li a:focus {
     height: 7%;
   }
 
+  /* SECTION HEADERS ------------------------------------------------ */
+  h2 {
+    font-size: calc(var(--w)/20);
+  }
+
+  #about-album1 h2 {
+    left: 24%;
+    top: 20%;
+    word-spacing: calc(var(--w)/100);
+    letter-spacing: calc(var(--w)/200);
+  }
+
+  #web-design1 h2 {
+    left: 36%;
+    top: 34%;
+  }
+
+  #web-design3 h3, #web-design4 h3 {
+    font-size: calc(var(--w)/10);
+  }
+
+  #web-design4 h3 {
+    padding-bottom: 3%;
+  }
+
+  /* PAGE-LINKS ----------------------------------------------- */
+  .header-row-link-container {
+    width: 5%;
+    border: hsl(250, 100%, 30%) solid calc(var(--w)/300);
+  }
+
+  #about-album1 .header-row-link-container {
+    left: 47.5%;
+    top: 35%;
+  }
+
+  #band-members1 .header-row-link-container {
+    left: 23%;
+  }
+
+  #web-design1 .header-row-link-container {
+    left: 47.5%;
+    top: 60%;
+  }
+
+  /* PARAGRAPHS -------------------------------------------- */
+  p {
+    font-size: calc(var(--w)/50);
+    padding: 2% 20%;
+  }
+
+  /* INLINE / INLINE EXTERNAL LINKS ------------------------ */
+  .album-name {
+    font-size: calc(var(--w)/20);
+  }
+
+  /* BAND MEMBER PROFILES /////////////////////////////////// */
+  .band-member-pic {
+    /* border: 4px solid red; */
+    position: absolute;
+    width: 50%;
+    height: 85%;
+    padding: 8%;
+  }
+
+  .band-member-name, .band-member-role, .band-member-write-up {
+    position: absolute;
+    width: 58%;
+    left: 42%;
+  }
+
+  .band-member-name {
+    font-size: calc(var(--w)/20);
+    top: 20%;
+  }
+
+  .band-member-role {
+    font-size: calc(var(--w)/25);
+    top: 35%;
+  }
+
+  .band-member-write-up {
+    font-size: calc(var(--w)/50);
+    padding: 0%;
+    top: 50%;
+    padding: 0% 4%;
+  }
+
+  .band-member-write-up p {
+    width: 100%;
+    height: 100%;
+    font-size: calc(var(--w)/50);
+    padding: 0%;
+    top: 50%;
+    padding: 0% 4%;
+  }
+
+  /* DREEKO PROFILE ////////////////////////////////////// */
+  #web-design2 .ur {
+    padding-bottom: 7%;
+  }
+
+  #dreeko-logo {
+    height: 40%;
+    padding: 0;
+  }
+
+  /* FONTS /////////////////////////////////////////////// */
+
+  #web-design3 p {
+    padding-top: 2%;
+    text-align: center;
+    line-height: 2;
+    padding-bottom: 1%;
+  }
+
+  #fonts-list {
+    height: 50%;
+    padding-top: 1%;
+    font-size: calc(var(--w)/40);
+  }
+
+  #fonts-list a {
+    border-top-width: calc(var(--w)/500);
+  }
+ 
+  .hubballi {
+    font-size: calc(var(--w)/30);
+  }
+
+  /* IMAGES LIST ---------------------------------------- */
+  #web-design4 p {
+    padding: 0.5% 0%;
+    text-align: center;
+  }
+
+  #web-design4 ul {
+    height: 50%;
+    font-size: calc(var(--w)/55);
+    padding-left: 0%;
+  }
+
+  #web-design4 ul li {
+    text-align: center;
+  }
 
 }

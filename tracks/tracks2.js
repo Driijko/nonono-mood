@@ -500,12 +500,17 @@ tl5.to(".rects5", {
   ease: "none",
 }, 178);
 tl5.to(".rects5", {
-  strokeWidth: 1500,
-  stroke: "hsla(0, 100%, 40%, 0.1)",
+  strokeWidth: 1500, //1500
+  stroke: "hsla(250, 100%, 40%, 0.1)",
   fill: "red",
-  duration: 110,
+  duration: 55, //110
   ease: "none",
 }, 198);
+tl5.to(".rects5", {
+  strokeWidth: 1,
+  stroke: "hsla(360, 100%, 50%, 1)",
+  duration: 50,
+}, 253);
 tl5.to("#filter-effect5-1", {
   attr: {
     scale: 150,
