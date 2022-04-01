@@ -1,4 +1,6 @@
-html, body, div, a, menu, audio {
+html, body, div, h2,
+a,ul, li,
+menu, audio {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -13,6 +15,9 @@ menu {
 }
 body {
 	line-height: 1;
+}
+ul {
+	list-style: none;
 }
 button, label {
   display: block;
