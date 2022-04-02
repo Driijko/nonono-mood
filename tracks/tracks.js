@@ -711,11 +711,11 @@ document.getElementById("about-link").addEventListener("click", e => {
   e.preventDefault();
   gsap.to(".vp", {
     duration: 5,
-    filter: `blur(${width/20}px)`,
+    opacity: 0,
   });
   setTimeout(()=> {
     window.location.href="./about.html";
-  },5000)
+  },5000);
 });
 
 

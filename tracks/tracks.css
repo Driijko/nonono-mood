@@ -78,7 +78,10 @@ body {
 
 
 /* ANIMATIONS //////////////////////////////////////////// */
-@keyframes blur-in {from {filter:blur(calc(var(--w)/2))}; to{filter: blur(0)}}
+@keyframes blur-in {
+  0% {filter:blur(100px);} 
+  100% {filter: blur(0px);}
+}
 
 /* GENERAL ///////////////////////////////////////////// */
 .vp {
