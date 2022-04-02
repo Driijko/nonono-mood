@@ -89,6 +89,7 @@ body {
 /* GENERAL INTERACTIONS //////////////////////////////////// */
 input {
   width: 0;
+  -webkit-appearance: none;
 }
 
 label, a, button {

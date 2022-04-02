@@ -71,7 +71,8 @@ body {
 
 /* CONTENT: PORTRAIT ////////////////////////////////////////////////////// */
 svg {
-  display: none;
+  position: absolute;
+  height: 0;
 }
 
 .vp {
