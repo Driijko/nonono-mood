@@ -226,7 +226,7 @@ header nav ul li a {
   transition-duration: 2s;
 }
 
-header nav ul li a:hover, header nav ul li a:focus {
+header nav ul li a:focus-visible {
   background-color: hsla(0, 0%, 0%, 0.8);
   transform: scale(110%);
 }
@@ -244,7 +244,7 @@ header nav ul li a:hover, header nav ul li a:focus {
   transition-duration: 2s;
 }
 
-#tracks-link:hover, #tracks-link:focus {
+#tracks-link:focus {
   background-color: white;
   color: black;
   transform: scale(120%);
@@ -308,7 +308,8 @@ h2 {
   transition-duration: 1s;
   transition-timing-function: ease-out; 
 }
-.page-link:hover path, .page-link:focus path {
+
+.page-link:focus-visible path {
   stroke: magenta;
 }
 
@@ -324,11 +325,11 @@ h2 {
   transition-timing-function: ease-out;
 }
 
-.header-row-link-container a:hover path, .header-row-link-container a:focus path {
+.header-row-link-container a:focus-visible path {
   fill: magenta;
 }
 
-.header-row-link-container a:focus rect, .header-row-link-container a:hover rect {
+.header-row-link-container a:focus-visible rect {
   fill: black;
 }
 
@@ -402,7 +403,7 @@ p {
   border-top:hsl(250, 100%, 50%) solid calc(var(--w)/200);
 }
 
-#fonts-list a:hover, #fonts-list a:focus {
+#fonts-list a:focus-visible {
   background-color: hsl(250, 100%, 20%);
   color: magenta;
 }
@@ -457,7 +458,7 @@ p {
   font-weight: bold;
 }
 
-.external-inline-link:hover, .external-inline-link:focus {
+.external-inline-link:focus-visible {
   color: magenta;
 }
 
@@ -527,6 +528,40 @@ p {
 
 .track-name {
   color: hsl(250, 100%, 60%);
+}
+
+@media (hover:hover) {
+  header nav ul li a:hover {
+    background-color: hsla(0, 0%, 0%, 0.8);
+    transform: scale(110%);
+  }
+
+  #tracks-link:hover {
+    background-color: white;
+    color: black;
+    transform: scale(120%);
+  }
+
+  .page-link:hover path {
+    stroke: magenta;
+  }
+
+  .header-row-link-container a:hover path {
+    fill: magenta;
+  }
+  
+  .header-row-link-container a:hover rect {
+    fill: black;
+  }
+
+  .external-inline-link:hover {
+    color: magenta;
+  }
+
+  #fonts-list a:hover {
+    background-color: hsl(250, 100%, 20%);
+    color: magenta;
+  }
 }
 
 /* LANDSCAPE ////////////////////////////////////////// */

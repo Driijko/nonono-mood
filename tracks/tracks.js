@@ -1,6 +1,5 @@
 // TRACK ANIMATIONS ///////////////////////////////////////////////////
 // Hunger animation -------------------------------------------------
-// delay : 12
 let tl1 = gsap.timeline({yoyo: true, repeat: 10, repeatDelay: 1, delay: 12});
 tl1.to(".triangle", {
   duration: 3.5,
@@ -217,6 +216,10 @@ tl2.to("#circle2-10", {
   fill: "hsl(340, 100%, 50%)",
   ease: "steps(1)",
 }, 89.95);
+tl2.to("#track-animation2", {
+  opacity: 0,
+  duration: 10,
+}, 355);
 
 const firstPause = 107;
 const firstPauseDuration = 93.5;
